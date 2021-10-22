@@ -1,0 +1,30 @@
+{
+  "name": "LNAccountModule",
+  "version": "0.1.0",
+  "summary": "登录组件.",
+  "description": "实现业务登录、注册的组件",
+  "homepage": "https://github.com/NoNameOrganazation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dongjianxiong": "jianxiong20090919@126.com"
+  },
+  "source": {
+    "git": "https://github.com/NoNameOrganazation/LNAccountModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LNAccountModule/Classes/**/*",
+  "dependencies": {
+    "LNModuleProtocol": [
+      "0.1.0"
+    ],
+    "LNModuleCore": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module LNModuleProtocol {
+  umbrella header "LNModuleProtocol-umbrella.h"
+
+  export *
+  module * { export * }
+}
