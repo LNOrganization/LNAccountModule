@@ -1,13 +1,13 @@
 PODS:
-  - LNAccountModule (0.1.1):
-    - LNCommonKit (~> 0.1.1)
+  - LNAccountModule (0.1.2):
+    - LNCommonKit (~> 0.1.2)
     - LNModuleCore (~> 0.1.6)
     - LNModuleProtocol (~> 0.1.3)
-  - LNCommonKit (0.1.1):
-    - LNCommonKit/Foundation (= 0.1.1)
-    - LNCommonKit/Router (= 0.1.1)
-  - LNCommonKit/Foundation (0.1.1)
-  - LNCommonKit/Router (0.1.1)
+  - LNCommonKit (0.1.2):
+    - LNCommonKit/Foundation (= 0.1.2)
+    - LNCommonKit/Router (= 0.1.2)
+  - LNCommonKit/Foundation (0.1.2)
+  - LNCommonKit/Router (0.1.2)
   - LNModuleCore (0.1.6)
   - LNModuleProtocol (0.1.3)
 
@@ -25,8 +25,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LNAccountModule: 1e984a608ab5a342a3d1cc6660ed323002386447
-  LNCommonKit: fba5fec6d1bd99b7abe9fee38cf38f5fdcbee5f7
+  LNAccountModule: f424cc165be887f5d8e216e71319c78e45d9fb38
+  LNCommonKit: 1796215efbd744ddc822305e04e6ee496359da4e
   LNModuleCore: 20e9172c888021179592f48790f9bf3d8020e5c9
   LNModuleProtocol: cdbde9135121be91f15ad33e60f940131b288e3f
 

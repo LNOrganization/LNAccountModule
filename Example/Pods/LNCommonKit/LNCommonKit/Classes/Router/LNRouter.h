@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LNRouter : NSObject
 
 
-- (UIViewController *)topViewController:(UIViewController *)vc;
++ (UIViewController *)topViewController:(UIViewController *)vc;
 
-- (UIViewController *)currentViewController;
++ (UIViewController *)currentViewController;
 
-- (void)pushToViewControll:(UIViewController *)viewController;
++ (void)pushToViewControll:(UIViewController *)viewController;
 
 
 @end

@@ -7,7 +7,7 @@
 
 #import "LNLoginManager.h"
 #import <LNModuleCore/LNModuleCore.h>
-#import <LNCommonKit/NSMutableDictionary+SafeOp.h>
+#import <LNCommonKit/LNCommonKit.h>
 #import <LNModuleProtocol/LNAccountModuleProtocol.h>
 #import "LNLoginViewController.h"
 #import "LNAccountModuleConfig.h"
@@ -160,7 +160,7 @@ __attribute__((constructor)) void addModulAccountModule(void){
             }];
         }];
     };
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:loginVc animated:YES completion:nil];
+    [[LNRouter currentViewController] presentViewController:loginVc animated:YES completion:nil];
 }
 
 @end

@@ -9,7 +9,7 @@
 
 @implementation LNRouter
 
-- (UIViewController *)topViewController:(UIViewController *)vc {
++ (UIViewController *)topViewController:(UIViewController *)vc {
     if (vc.presentedViewController) {
         return [self topViewController:vc.presentedViewController];
     } else if ([vc isKindOfClass:[UISplitViewController class]]) {
@@ -38,12 +38,12 @@
     }
 }
 
-- (UIViewController *)currentViewController {
++ (UIViewController *)currentViewController {
     UIViewController *vc = [self topViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
     return vc;
 }
 
-- (void)pushToViewControll:(UIViewController *)viewController
++ (void)pushToViewControll:(UIViewController *)viewController
 {
     UIViewController *currentViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     if (currentViewController.navigationController) {

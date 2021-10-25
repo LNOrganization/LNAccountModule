@@ -11,4 +11,7 @@
 
 #import "LNRouter.h"
 #import "UIViewController+Router.h"
+#import "NSMutableArray+SafeOp.h"
+#import "NSMutableDictionary+SafeOp.h"
+
 #endif /* LNCommonKit_h */
