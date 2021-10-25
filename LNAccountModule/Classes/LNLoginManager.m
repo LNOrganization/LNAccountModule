@@ -7,6 +7,7 @@
 
 #import "LNLoginManager.h"
 #import <LNModuleCore/LNModuleCore.h>
+#import <LNCommonKit/NSMutableDictionary+SafeOp.h>
 #import <LNModuleProtocol/LNAccountModuleProtocol.h>
 #import "LNLoginViewController.h"
 #import "LNAccountModuleConfig.h"
@@ -31,9 +32,6 @@ __attribute__((constructor)) void addModulAccountModule(void){
 
 @property(nonatomic, strong) NSMutableDictionary *logoutNotifications;
 
-@property(nonatomic, strong) NSRecursiveLock *loginLock;
-@property(nonatomic, strong) NSRecursiveLock *logoutLock;
-
 @end
 
 @implementation LNLoginManager
@@ -55,8 +53,6 @@ __attribute__((constructor)) void addModulAccountModule(void){
     if (self) {
         _loginNotifications = [[NSMutableDictionary alloc] init];
         _logoutNotifications = [[NSMutableDictionary alloc] init];
-        _loginLock = [[NSRecursiveLock alloc] init];
-        _logoutLock = [[NSRecursiveLock alloc] init];
     }
     return self;
 }
@@ -103,35 +99,27 @@ __attribute__((constructor)) void addModulAccountModule(void){
     [[NSUserDefaults standardUserDefaults] setValue:nil forKey:kLNLoginAccount];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLogoutFinishNotification object:nil];
-    [_logoutLock lock];
-    [self.logoutNotifications enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, LNLogotCompletion  _Nonnull obj, BOOL * _Nonnull stop) {
+    [[self.logoutNotifications copy] enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, LNLogotCompletion  _Nonnull obj, BOOL * _Nonnull stop) {
         obj();
     }];
-    [_logoutLock unlock];
 }
 
 - (void)registerLoginCompletionNotify:(LNLoginCompletion)completion forKey:(NSString *)key {
     if (key && completion && ![self.loginNotifications objectForKey:key]) {
-        [_loginLock lock];
-        [self.loginNotifications setObject:completion forKey:key];
-        [_loginLock unlock];
+        [self.loginNotifications safe_setObject:completion forKey:key];
     }
 }
 
 - (void)removeLoginNotificationForKey:(NSString *)key
 {
     if (key && [self.loginNotifications objectForKey:key]) {
-        [_loginLock lock];
-        [self.loginNotifications removeObjectForKey:key];
-        [_loginLock unlock];
+        [self.loginNotifications safe_removeObjectForKey:key];
     }
 }
 
 - (void)registerLogoutCompletionNotify:(LNLogotCompletion)completion forKey:(NSString *)key {
     if (key && completion && ![self.loginNotifications objectForKey:key]) {
-        [_logoutLock lock];
-        [self.logoutNotifications setObject:completion forKey:key];
-        [_logoutLock unlock];
+        [self.logoutNotifications safe_setObject:completion forKey:key];
     }
 }
 
@@ -139,9 +127,7 @@ __attribute__((constructor)) void addModulAccountModule(void){
 - (void)removeLogoutNotificationForKey:(NSString *)key
 {
     if (key && [self.loginNotifications objectForKey:key]) {
-        [_logoutLock lock];
-        [self.logoutNotifications removeObjectForKey:key];
-        [_logoutLock unlock];
+        [self.logoutNotifications safe_removeObjectForKey:key];
     }
 }
 
@@ -153,6 +139,7 @@ __attribute__((constructor)) void addModulAccountModule(void){
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSString *realBundlePath = [NSString stringWithFormat:@"%@/%@",bundle.bundlePath,@"LNAccountModule.bundle"];
     NSBundle *realBundle = [NSBundle bundleWithPath:realBundlePath];
+    
     LNLoginViewController *loginVc = [[LNLoginViewController alloc] initWithNibName:@"LNLoginViewController" bundle:realBundle];
     loginVc.modalPresentationStyle = 0;
     __weak typeof(LNLoginViewController) *weakLoginVc = loginVc;
@@ -168,11 +155,9 @@ __attribute__((constructor)) void addModulAccountModule(void){
             if (completion) {
                 completion(accountInfo, error.description);
             }
-            [weakSelf.loginLock lock];
-            [weakSelf.loginNotifications enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, LNLoginCompletion  _Nonnull obj, BOOL * _Nonnull stop) {
+            [[weakSelf.loginNotifications copy] enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, LNLoginCompletion  _Nonnull obj, BOOL * _Nonnull stop) {
                 obj(accountInfo, error.description);
             }];
-            [weakSelf.loginLock unlock];
         }];
     };
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:loginVc animated:YES completion:nil];

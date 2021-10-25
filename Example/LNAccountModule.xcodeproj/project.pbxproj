@@ -303,12 +303,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LNAccountModule/LNAccountModule.framework",
+				"${BUILT_PRODUCTS_DIR}/LNCommonKit/LNCommonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/LNModuleCore/LNModuleCore.framework",
 				"${BUILT_PRODUCTS_DIR}/LNModuleProtocol/LNModuleProtocol.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNAccountModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNCommonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNModuleCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNModuleProtocol.framework",
 			);

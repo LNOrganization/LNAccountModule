@@ -7,193 +7,249 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CEF987E72F048E91ECEA678A923DE5D /* LNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D3CE0190723B83FEEE237758CA9E2B /* LNLoginViewController.xib */; };
-		0F80E505021F2AF6CCB7EDAD7C44063F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */; };
-		15F74C147554236E9C9B62F8BD04F00A /* LNModuleCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA22E16AFF1EF2A407ED0465ADB3A91 /* LNModuleCore-dummy.m */; };
-		2194ABC8F950CDB78138C1C13999564B /* LNModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F436E87762964261DE54F253C1E7BD0D /* LNModuleCore.framework */; };
-		23FAAECD6B2438E9731D52FC24F29D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */; };
-		250C016AC1F89F36952D5531CB042CCB /* LNAccountModuleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6BDEBA95D98C4660A65EA048B84134 /* LNAccountModuleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2ACE880EAF6EB0C232EE778B62CC46D8 /* LNVideoModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE4C5B0FB02969EB8F661265F20B8E1 /* LNVideoModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33063C5823DB89ACCB7F1CF94DC7660E /* LNModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EACF0B775EA18BF411109E47E7AFFF2B /* LNModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		340BE9AE432CEF54494A2D4AAB5EF306 /* LNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAA71333FE3884F71FAF0E6B0977F7 /* LNLoginViewController.m */; };
-		4010F687750531C85B8A7A355103D3DA /* LNModuleProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE054822956F696CE0B9EB914D714FB4 /* LNModuleProtocol.framework */; };
-		5A480DB0D4B00D9F075CB210876F288A /* LNLiveModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F480F494EDDD505D3FB9CF00F482170 /* LNLiveModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DD3A3D0BB73E818B7F51B836E6C0AAF /* LNAccountModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A88C32FFFEECD3357E3AC5FFDE2B8600 /* LNAccountModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		623254934C46ECE8D91C7FA825E2D0B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */; };
+		00BE8A29E57EC10D63C4921DC74B54B8 /* LNAccountModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A88C32FFFEECD3357E3AC5FFDE2B8600 /* LNAccountModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CC5CB0A8E96BBC963CFD7389149825E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */; };
+		0CD0747EB4A2F01A48D4E5DDC2A3740B /* LNVideoModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F47875F623AD1683D4387C4F6183E76 /* LNVideoModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F80E505021F2AF6CCB7EDAD7C44063F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */; };
+		1BECE286F0E665FDCE067C88D94C7838 /* LNLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AC4922F41C4FDDA5E436236CCEEBBB /* LNLoginManager.m */; };
+		1BFCFCF36DDCBA6AE6E9D03966D29138 /* LNAccountModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */; };
+		1D1DEC33F96023FFD9427D0F44432560 /* LNAccountModuleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7812E61F04C0CB9711E9591CD1D1BF /* LNAccountModuleConfig.m */; };
+		2F615CF8CDA9FF12200C91B7C2071330 /* LNFeedModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5773B4458FE4A21883572C2CD66C7D9F /* LNFeedModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F02B0B2C4B04BE822853365AC4CDF3 /* LNModuleCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3C4E5FDC4D2951C5C1C9CC5E0556B0 /* LNModuleCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A42E9EDF14EA3C70554E535905F58FF /* LNModuleProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BDC1727BC6B48AAF1F7837F2AB442C /* LNModuleProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B4BE303C0443B56A7B05096C40F6589 /* LNAccountModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D54F1507C80DE7976A1B3DA5569EAF2 /* LNAccountModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7390E3AFDCE863513DF6F7855A147C /* LNModuleProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD684BCCA8E32A5681548B244D8F6BF /* LNModuleProtocol.framework */; };
+		4DF32D778C410E8FE8BCFB04723425E4 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 92602968E8127B80C32D7B4BF618C3B6 /* ReplaceMe.m */; };
+		4FB899FAD395099B1030E52036ADB7F0 /* LNModuleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6687B903DF71776984E0A4541ADDB2 /* LNModuleAppDelegate.m */; };
+		54EA179BEB0B4F3457DBFA802BB3CF18 /* LNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D3CE0190723B83FEEE237758CA9E2B /* LNLoginViewController.xib */; };
+		554A6EB9AAC2FFA5A2B3E8FD13DBB78A /* LNCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D59EBFE65B004EB3C74D0D5AC1CBD6F /* LNCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55FD6AB9F16AE54F36F03467BE5178A8 /* Pods-LNAccountModule_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 463E62881BFCBB1250BFAD12C7C218A5 /* Pods-LNAccountModule_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FCFE9EF10C470E3BF2528146D8D4435 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CD4BE15FAEA372F026D5A696870F8D /* ReplaceMe.m */; };
+		6B1857166C3666494C8223E78ED80E01 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B6729BC1C9236B4308780E31A9725DEF /* ReplaceMe.m */; };
 		6B612A17BACD9B4EA005D36F33C2DDE7 /* Pods-LNAccountModule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5401401C4D8D38147797C8CE8A6F550A /* Pods-LNAccountModule_Tests-dummy.m */; };
-		6BF3C840211AE0D49E2D5B6F39159445 /* Pods-LNAccountModule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C51F9BFB5930FA196907E790B5BBE09C /* Pods-LNAccountModule_Example-dummy.m */; };
-		6E5C68C2D79BEE19F7973D5A1F2D8788 /* LNModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854F236950A01B86DEA79106FE88330D /* LNModuleManager.m */; };
-		71F7AE7DB11914212AB9518B78B55EE3 /* LNAccountModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D3A3B65E10FE5B755E87871C19370F /* LNAccountModule-dummy.m */; };
-		754EE020C34F3F2CF623F054E0EB60DE /* LNModuleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C91C5F149C4EF9CA3C208606DF0FA5D2 /* LNModuleAppDelegate.m */; };
-		84AA898C09F865363861773159218E7A /* LNModuleCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A4B3219862B9EAEC3FF7CB204F37BB /* LNModuleCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E87CFCCB24DE96FFF400DF24BABD1BF /* LNModuleBaseProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 267365853B85455B5CB448D5BA6E0FDA /* LNModuleBaseProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9C67DAB23665871345205E0A5760B1 /* LNModuleAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C699B3EE876465507A5845DC1341A7E8 /* LNModuleAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CCEDD8249D5C7553C51016AC391D884 /* LNLiveModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AB9179B5F8FC92FB5E3283CD7B2729 /* LNLiveModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7050A95408C49319768617E643500A3F /* LNModuleBaseProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DE8E300C33DAAE8DE322B7724D8691 /* LNModuleBaseProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7496E0AD3D93775CE99ECE7900885BD2 /* LNModuleCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E6D6BC195B5F663A905B979D391572 /* LNModuleCore-dummy.m */; };
+		8279CFDC9B261EDA024A041276C8467D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */; };
+		82E828230AE4D8D9D8B05C405FAFDC37 /* LNRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECC47837F20BB27E0E88130B4544BD /* LNRouter.m */; };
+		8A1BD9CED58FCD60A8C4998541FF217A /* NSMutableDictionary+SafeOp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378A9C15F383E6AB0351558CE99EFE3 /* NSMutableDictionary+SafeOp.m */; };
+		8EC21FD9D3C6C9922FB1D4E080FF2AB4 /* NSMutableArray+SafeOp.h in Headers */ = {isa = PBXBuildFile; fileRef = F0604F180B566CED5103538FB4BFDEBE /* NSMutableArray+SafeOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96713AEFB154141ADE769E2E98492F19 /* Pods-LNAccountModule_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC153B376867E7EEDFE711DCEEAFA51A /* Pods-LNAccountModule_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9978D9D5CEEC549EE2780D504D27A033 /* LNAccountModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DFF4BE11FDB25C287584EB566F4CE89 /* LNAccountModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C195F69BA4606E4B38C1D0BBB596C20 /* LNModuleProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC42108FC95309BED2DEB2BF1EBDB4F /* LNModuleProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CBF0DED5D8BBB532CC4873203DB4465 /* LNLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AC4922F41C4FDDA5E436236CCEEBBB /* LNLoginManager.m */; };
-		A0D024684D73A7CADE4DAAB5E7080D6E /* LNAccountModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */; };
-		AE280B38D828FA86728D9D5735CAC2C2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B6729BC1C9236B4308780E31A9725DEF /* ReplaceMe.m */; };
-		AFC19834B0E568DFABE0E63B0DD0E9BA /* LNLoginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D179FD17ECC7DA8BC820A5B1E127608A /* LNLoginManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3E8F9F2EA47480E62D78EDDA0DEC107 /* LNAccountModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B971EE72ED363FCEA2EE9EBE0C8B6BA /* LNAccountModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7D7223985F01C9863EC8ED95C75CD20 /* LNAccountModuleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7812E61F04C0CB9711E9591CD1D1BF /* LNAccountModuleConfig.m */; };
-		C2EE6DE5E96618EACADFFB657BC4EA70 /* LNFeedModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FAAA7932AFF1BADBA0594B332516D6 /* LNFeedModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFA3C5B66D21E7A6476C6FFF7453A149 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B247C0112B760D4EC24C5C0F53352A55 /* ReplaceMe.m */; };
-		D12B519519937ABFDBDAA6E1066DAAE7 /* LNModuleAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C86D2ABF0AAA2238A95D08270EEFD44E /* LNModuleAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D28A881A8C0C74A8A58344DEFA487EC2 /* LNLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A9A0DCE266E963275ADDD9FADDB319 /* LNLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D47C91516ED83F80329E6B235F6988BD /* LNModuleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E10BE0541C18B4CF213E03B62E0A95 /* LNModuleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFAC7554E9DEF408D1D7E55EBCE029E9 /* LNModuleProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D13AB0BAF9CA4BCAE27BE97E3C045D /* LNModuleProtocol-dummy.m */; };
-		E5E7374AB9A9242E0C8F4B8629352A69 /* Pods-LNAccountModule_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 463E62881BFCBB1250BFAD12C7C218A5 /* Pods-LNAccountModule_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E75C2713C0A11CB9B953197B1E5B0021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */; };
-		E7859B697D0C6B2E04D3DB890614266E /* LNModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBF4C0DBBCF627FC3D94982EB117660 /* LNModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F45EFF356DDC9E5952418CE82B43012C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */; };
-		FF5A3A4B5836128F71C77809FD7F71D3 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B57E2F465C4E51D02F1794172930D1F /* ReplaceMe.m */; };
+		96D10C4B4B715A92062A98DD521531FF /* LNCommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503074D2CC312339DE47A5BDFA66995B /* LNCommonKit.framework */; };
+		A7FDADF8211592BF51E66C8BE23ACFDF /* LNModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C755B1ED78282FB6D65F7B66AC8D4B /* LNModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A904192A29B7B0FBE95F8344E63936EE /* Pods-LNAccountModule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C51F9BFB5930FA196907E790B5BBE09C /* Pods-LNAccountModule_Example-dummy.m */; };
+		B06E0B371DC880D61353DD2E5857486F /* LNCommonKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF8A0236F0C02D162DD1A9C50E66F62 /* LNCommonKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4593D9B2EF3216D2FCBC3B49B441FBB /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C889488DC9A0D381F34401BC08D71429 /* ReplaceMe.m */; };
+		BA384820B67EC3637D1F9A08A46702AD /* LNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAA71333FE3884F71FAF0E6B0977F7 /* LNLoginViewController.m */; };
+		BBAB00809732653816D665F729B97DCE /* LNModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047D4D9A9729BAFC104AF6B0903E0782 /* LNModuleCore.framework */; };
+		BEDA683CB5E1519E9BCC23B0DFB9DB17 /* NSMutableDictionary+SafeOp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FBC6A71B6C1A184782DE73129D27456 /* NSMutableDictionary+SafeOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7FA0779F02BFCB935BDB63214400D65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */; };
+		C9EA0BB1240AD147422CF4472252A2C8 /* LNLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A9A0DCE266E963275ADDD9FADDB319 /* LNLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBD1FC81F556DAB26F94AC34DB22C7AB /* NSMutableArray+SafeOp.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F72A9DFAB21BEA1186293E2E08B56B /* NSMutableArray+SafeOp.m */; };
+		D2F76FA0A0255599C6DC4BA41ACF0061 /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C56EBF3A65FF737E059884082762DAE /* UIViewController+Router.m */; };
+		D9964FB13B2FB8E32AAA7C8767F0C3CC /* LNAccountModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D3A3B65E10FE5B755E87871C19370F /* LNAccountModule-dummy.m */; };
+		DC6431C9ADF4EA8BA058AEFC9603F394 /* LNModuleProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7728196096A0904FAA6C2E775D9A38 /* LNModuleProtocol-dummy.m */; };
+		E3B7A4DFF9EB8EE264E25F5CDC3EBF36 /* LNLoginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D179FD17ECC7DA8BC820A5B1E127608A /* LNLoginManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E44892007BDF91FDE1D2160D3D02F3D3 /* LNAccountModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DFF4BE11FDB25C287584EB566F4CE89 /* LNAccountModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7285ECB8BBF3E959C71510780841785 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */; };
+		E7BD1E9AE0EDDFD7E02063EF6DAC1EFC /* LNCommonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D852B508D089F38C3E44FEABA57351 /* LNCommonKit-dummy.m */; };
+		E7C58EF42E11AF52480545C3AA1DB16F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */; };
+		E80F9A08526092646A1FE169E85229FB /* LNModuleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AC20C9A9FD5116F225C100E1D36E2B /* LNModuleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB034A8397ED86C9CD691E8FBC81094D /* UIViewController+Router.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A0D1AE685081AAAD6D6719D18A265F /* UIViewController+Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBB1D9C169E8B7EB485B9B1738439BCE /* LNRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = E08254AE2243542C604C6D818ADC928D /* LNRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F42489E23569E17A2F638EAEBD64F2D0 /* LNModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DD652FBA4C347FA0A65B60EE0109DF /* LNModuleManager.m */; };
+		FC10B6925CB587D1AD2CF407F64A0DEB /* LNAccountModuleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6BDEBA95D98C4660A65EA048B84134 /* LNAccountModuleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF20E854D942F72290AA0DADD34C733E /* LNModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 980932B1F91814873A069B28526057D6 /* LNModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2865FA465FA777997EEA02CF976ACCF8 /* PBXContainerItemProxy */ = {
+		014F63366416749C8E99EBEAF7F4F0F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B511A198B66B7E7BA8B4C5C6E4D7E3BB;
-			remoteInfo = LNModuleCore;
+			remoteGlobalIDString = 91A29DC8D32830C5C4112FA44227AFC1;
+			remoteInfo = LNCommonKit;
 		};
-		3759B311C10AFFCCB7D064EF77183D10 /* PBXContainerItemProxy */ = {
+		22EB645D12EE503B3575544FC499E2AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91A29DC8D32830C5C4112FA44227AFC1;
+			remoteInfo = LNCommonKit;
+		};
+		5086EE06CEF95B49ECAF67E317DABF6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C2E7C1A83CBAA97A83FFE3E7B609B44A;
 			remoteInfo = LNModuleProtocol;
 		};
-		39BA50DA0AC33AB46D73EC4388FE4779 /* PBXContainerItemProxy */ = {
+		722371E75F84BB63A6C7FAB1C16CEA3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C2E7C1A83CBAA97A83FFE3E7B609B44A;
 			remoteInfo = LNModuleProtocol;
 		};
-		860C05B061246024FA01E9B484DE5D37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 73C7B85C28ECE109F775F9300FD51E3B;
-			remoteInfo = "LNAccountModule-LNAccountModule";
-		};
-		88C61226744DC5FA395CC98362647C22 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5372E72EB5597464E9DAE60A1778BBE5;
-			remoteInfo = LNAccountModule;
-		};
-		CB21BC9F2A896ACA9BD6C8D09DFBDB6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B511A198B66B7E7BA8B4C5C6E4D7E3BB;
-			remoteInfo = LNModuleCore;
-		};
-		F6EF4DD2C0856185AFB1EE70D8C9A7A7 /* PBXContainerItemProxy */ = {
+		8B79C27317F9BC5270835FD71A37A83C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B32743B66FBC4DA47ABB3CF41175A751;
 			remoteInfo = "Pods-LNAccountModule_Example";
 		};
+		C6407DEEAA2811CB23F64F9A0C0E9D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5372E72EB5597464E9DAE60A1778BBE5;
+			remoteInfo = LNAccountModule;
+		};
+		C98AA560BDB4F658CEF82A9DF30617F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73C7B85C28ECE109F775F9300FD51E3B;
+			remoteInfo = "LNAccountModule-LNAccountModule";
+		};
+		DC092B66C197ED457771CEC0EFD689F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B511A198B66B7E7BA8B4C5C6E4D7E3BB;
+			remoteInfo = LNModuleCore;
+		};
+		FA5A3B3C840D6F4DB381D9CAA358B0E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B511A198B66B7E7BA8B4C5C6E4D7E3BB;
+			remoteInfo = LNModuleCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028C5C10ED39388E6AB7D3B9B7F3960C /* LNCommonKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LNCommonKit-Info.plist"; sourceTree = "<group>"; };
+		02D05036E94086F398FB575D09B65E6B /* LNModuleCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleCore.debug.xcconfig; sourceTree = "<group>"; };
+		047D4D9A9729BAFC104AF6B0903E0782 /* LNModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B1F37314FD17D36BCD25C5921817CE /* Pods-LNAccountModule_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LNAccountModule_Example.modulemap"; sourceTree = "<group>"; };
 		0885052F02450813A406FE59A996AD58 /* Pods_LNAccountModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LNAccountModule_Example.framework; path = "Pods-LNAccountModule_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B57E2F465C4E51D02F1794172930D1F /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LNModuleCore/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		14CAB0238AD618C18F34D03C5EFA9E14 /* LNModuleProtocol-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LNModuleProtocol-Info.plist"; sourceTree = "<group>"; };
+		0BF8A0236F0C02D162DD1A9C50E66F62 /* LNCommonKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNCommonKit-umbrella.h"; sourceTree = "<group>"; };
 		169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LNAccountModule.bundle; path = "LNAccountModule-LNAccountModule.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A9D6C82FB4C017705240A6D68B1630 /* ResourceBundle-LNAccountModule-LNAccountModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LNAccountModule-LNAccountModule-Info.plist"; sourceTree = "<group>"; };
 		17DB3FF4A09F1B16023FDFE36D58D9D4 /* LNAccountModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LNAccountModule.modulemap; sourceTree = "<group>"; };
+		17E6D6BC195B5F663A905B979D391572 /* LNModuleCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNModuleCore-dummy.m"; sourceTree = "<group>"; };
 		1C362A33DEBA01BC5D9A25067E05C4CE /* Pods-LNAccountModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNAccountModule_Example.release.xcconfig"; sourceTree = "<group>"; };
-		25B47AF8E986167B932B52668803C852 /* LNModuleCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleCore.release.xcconfig; sourceTree = "<group>"; };
-		267365853B85455B5CB448D5BA6E0FDA /* LNModuleBaseProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleBaseProtocol.h; path = LNModuleProtocol/Classes/LNModuleBaseProtocol.h; sourceTree = "<group>"; };
-		26D13AB0BAF9CA4BCAE27BE97E3C045D /* LNModuleProtocol-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNModuleProtocol-dummy.m"; sourceTree = "<group>"; };
+		2378A9C15F383E6AB0351558CE99EFE3 /* NSMutableDictionary+SafeOp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+SafeOp.m"; path = "LNCommonKit/Classes/Foundation/NSMutableDictionary+SafeOp.m"; sourceTree = "<group>"; };
 		27A9A0DCE266E963275ADDD9FADDB319 /* LNLoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNLoginViewController.h; path = LNAccountModule/Classes/LNLoginViewController.h; sourceTree = "<group>"; };
 		289CEBEB01F23994A2F931410393790A /* Pods-LNAccountModule_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LNAccountModule_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2B7812E61F04C0CB9711E9591CD1D1BF /* LNAccountModuleConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNAccountModuleConfig.m; path = LNAccountModule/Classes/LNAccountModuleConfig.m; sourceTree = "<group>"; };
-		30B969A84CE380D0414FE64515D19660 /* LNModuleProtocol-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleProtocol-prefix.pch"; sourceTree = "<group>"; };
 		3AD549AF616D08A452E8EAFB50643515 /* Pods_LNAccountModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LNAccountModule_Tests.framework; path = "Pods-LNAccountModule_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3C4E5FDC4D2951C5C1C9CC5E0556B0 /* LNModuleCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleCore-umbrella.h"; sourceTree = "<group>"; };
+		3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3D4238E8FB7AACE2D0D2B580F2AEA633 /* Pods-LNAccountModule_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNAccountModule_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3DB2FF76216231B1EE4B9395821BE20B /* LNAccountModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNAccountModule-prefix.pch"; sourceTree = "<group>"; };
-		3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		436EB8688654832EACB66D1A1CF5796A /* LNModuleProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleProtocol.release.xcconfig; sourceTree = "<group>"; };
 		4444A64A084FA67BBD5DB43163D53EE4 /* LNAccountModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LNAccountModule-Info.plist"; sourceTree = "<group>"; };
-		44FAAA7932AFF1BADBA0594B332516D6 /* LNFeedModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNFeedModuleProtocol.h; path = LNModuleProtocol/Classes/LNFeedModuleProtocol.h; sourceTree = "<group>"; };
 		463E62881BFCBB1250BFAD12C7C218A5 /* Pods-LNAccountModule_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LNAccountModule_Example-umbrella.h"; sourceTree = "<group>"; };
 		48AED3150945F7052D0E2667B953CD71 /* LNModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LNModuleCore.framework; path = LNModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C755B1ED78282FB6D65F7B66AC8D4B /* LNModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleManager.h; path = LNModuleCore/Classes/LNModuleManager.h; sourceTree = "<group>"; };
 		4BD8CC6E84EF6DC45C76C4F6883F0BA4 /* Pods-LNAccountModule_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNAccountModule_Tests-Info.plist"; sourceTree = "<group>"; };
-		4F480F494EDDD505D3FB9CF00F482170 /* LNLiveModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNLiveModuleProtocol.h; path = LNModuleProtocol/Classes/LNLiveModuleProtocol.h; sourceTree = "<group>"; };
+		503074D2CC312339DE47A5BDFA66995B /* LNCommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNCommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5401401C4D8D38147797C8CE8A6F550A /* Pods-LNAccountModule_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LNAccountModule_Tests-dummy.m"; sourceTree = "<group>"; };
+		5773B4458FE4A21883572C2CD66C7D9F /* LNFeedModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNFeedModuleProtocol.h; path = LNModuleProtocol/Classes/LNFeedModuleProtocol.h; sourceTree = "<group>"; };
 		5A8D57C34123875B617F63DC86E3A795 /* Pods-LNAccountModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNAccountModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5BE3C67C1307F50F9CDF774DEE2F4327 /* LNModuleCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LNModuleCore-Info.plist"; sourceTree = "<group>"; };
+		5C56EBF3A65FF737E059884082762DAE /* UIViewController+Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Router.m"; path = "LNCommonKit/Classes/Router/UIViewController+Router.m"; sourceTree = "<group>"; };
 		5DFF4BE11FDB25C287584EB566F4CE89 /* LNAccountModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNAccountModule.h; path = LNAccountModule/Classes/LNAccountModule.h; sourceTree = "<group>"; };
 		68A7AECE1AEC075B272261BA4A5EAB40 /* Pods-LNAccountModule_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNAccountModule_Example-Info.plist"; sourceTree = "<group>"; };
 		6C11DDA615D28407390C6BFB99E9E548 /* LNModuleProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LNModuleProtocol.framework; path = LNModuleProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D59EBFE65B004EB3C74D0D5AC1CBD6F /* LNCommonKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNCommonKit.h; path = LNCommonKit/Classes/LNCommonKit.h; sourceTree = "<group>"; };
 		6D64EB8EB62020129BF11BA5FAF9ACBE /* LNAccountModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LNAccountModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6DBF4C0DBBCF627FC3D94982EB117660 /* LNModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleProtocol.h; path = LNModuleProtocol/Classes/LNModuleProtocol.h; sourceTree = "<group>"; };
-		6EE39139F201656C887DDDEC18C4DD2C /* LNModuleCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LNModuleCore.modulemap; sourceTree = "<group>"; };
+		6EE5172B12CB8F9FA35FC51B002EA24D /* LNModuleProtocol-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LNModuleProtocol-Info.plist"; sourceTree = "<group>"; };
 		6F6BDEBA95D98C4660A65EA048B84134 /* LNAccountModuleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNAccountModuleConfig.h; path = LNAccountModule/Classes/LNAccountModuleConfig.h; sourceTree = "<group>"; };
+		77D852B508D089F38C3E44FEABA57351 /* LNCommonKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNCommonKit-dummy.m"; sourceTree = "<group>"; };
 		7B49A2031DBD04D003F503A4AFAA20C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		7B971EE72ED363FCEA2EE9EBE0C8B6BA /* LNAccountModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNAccountModuleProtocol.h; path = LNModuleProtocol/Classes/LNAccountModuleProtocol.h; sourceTree = "<group>"; };
+		7F47875F623AD1683D4387C4F6183E76 /* LNVideoModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNVideoModuleProtocol.h; path = LNModuleProtocol/Classes/LNVideoModuleProtocol.h; sourceTree = "<group>"; };
 		837B96B80C81BA9F4D0DB5F135D03F34 /* LNAccountModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNAccountModule.debug.xcconfig; sourceTree = "<group>"; };
-		854F236950A01B86DEA79106FE88330D /* LNModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNModuleManager.m; path = LNModuleCore/Classes/LNModuleManager.m; sourceTree = "<group>"; };
+		87E00E863B0E34141B1E6AAD1D82EBE0 /* LNCommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LNCommonKit.framework; path = LNCommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89DE8E300C33DAAE8DE322B7724D8691 /* LNModuleBaseProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleBaseProtocol.h; path = LNModuleProtocol/Classes/LNModuleBaseProtocol.h; sourceTree = "<group>"; };
 		8BD828BDA86097CA6596E32E02C87EA6 /* Pods-LNAccountModule_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LNAccountModule_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8E8F076CC9382FF426F7E7C9F4AA7E0B /* LNModuleCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleCore.debug.xcconfig; sourceTree = "<group>"; };
+		8BECC47837F20BB27E0E88130B4544BD /* LNRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNRouter.m; path = LNCommonKit/Classes/Router/LNRouter.m; sourceTree = "<group>"; };
+		8E7728196096A0904FAA6C2E775D9A38 /* LNModuleProtocol-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNModuleProtocol-dummy.m"; sourceTree = "<group>"; };
+		8ECD5CD57EDD8302579750696BD8F50F /* LNModuleProtocol-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleProtocol-prefix.pch"; sourceTree = "<group>"; };
+		92602968E8127B80C32D7B4BF618C3B6 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LNModuleCore/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		95BDC1727BC6B48AAF1F7837F2AB442C /* LNModuleProtocol-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleProtocol-umbrella.h"; sourceTree = "<group>"; };
 		97C5F52613FF87051B598BD03E4EAF41 /* LNAccountModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LNAccountModule.framework; path = LNAccountModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D3CE0190723B83FEEE237758CA9E2B /* LNLoginViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LNLoginViewController.xib; path = LNAccountModule/Classes/LNLoginViewController.xib; sourceTree = "<group>"; };
-		9BE4C5B0FB02969EB8F661265F20B8E1 /* LNVideoModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNVideoModuleProtocol.h; path = LNModuleProtocol/Classes/LNVideoModuleProtocol.h; sourceTree = "<group>"; };
+		980932B1F91814873A069B28526057D6 /* LNModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleProtocol.h; path = LNModuleProtocol/Classes/LNModuleProtocol.h; sourceTree = "<group>"; };
+		9C1578586C46DACF1E7A9713D39FACB5 /* LNCommonKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNCommonKit.debug.xcconfig; sourceTree = "<group>"; };
+		9D54F1507C80DE7976A1B3DA5569EAF2 /* LNAccountModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNAccountModuleProtocol.h; path = LNModuleProtocol/Classes/LNAccountModuleProtocol.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FA585CBFB259769ED92C2837EE66F4E /* LNModuleProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleProtocol.debug.xcconfig; sourceTree = "<group>"; };
+		9FBC6A71B6C1A184782DE73129D27456 /* NSMutableDictionary+SafeOp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+SafeOp.h"; path = "LNCommonKit/Classes/Foundation/NSMutableDictionary+SafeOp.h"; sourceTree = "<group>"; };
 		A4D3A3B65E10FE5B755E87871C19370F /* LNAccountModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNAccountModule-dummy.m"; sourceTree = "<group>"; };
 		A88C32FFFEECD3357E3AC5FFDE2B8600 /* LNAccountModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNAccountModule-umbrella.h"; sourceTree = "<group>"; };
-		A8A4B3219862B9EAEC3FF7CB204F37BB /* LNModuleCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleCore-umbrella.h"; sourceTree = "<group>"; };
 		AC153B376867E7EEDFE711DCEEAFA51A /* Pods-LNAccountModule_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LNAccountModule_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B05F3B10D08D5025BC887E7CAE633A5B /* LNModuleProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleProtocol.release.xcconfig; sourceTree = "<group>"; };
-		B0E10BE0541C18B4CF213E03B62E0A95 /* LNModuleCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleCore.h; path = LNModuleCore/Classes/LNModuleCore.h; sourceTree = "<group>"; };
-		B22A6704999D34F5CF737A914370DB50 /* LNModuleProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleProtocol.debug.xcconfig; sourceTree = "<group>"; };
-		B247C0112B760D4EC24C5C0F53352A55 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LNModuleProtocol/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		AFDDE468D1A5470C02299E59FC21B44B /* LNCommonKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNCommonKit.release.xcconfig; sourceTree = "<group>"; };
 		B6729BC1C9236B4308780E31A9725DEF /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LNAccountModule/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		B8166915B0E4D001F29BC7694054BD88 /* LNModuleCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LNModuleCore.modulemap; sourceTree = "<group>"; };
 		B9AC4922F41C4FDDA5E436236CCEEBBB /* LNLoginManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNLoginManager.m; path = LNAccountModule/Classes/LNLoginManager.m; sourceTree = "<group>"; };
-		BEA22E16AFF1EF2A407ED0465ADB3A91 /* LNModuleCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNModuleCore-dummy.m"; sourceTree = "<group>"; };
+		BC3A16048134A4E67C3DC0EDB79E3763 /* LNModuleCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleCore-prefix.pch"; sourceTree = "<group>"; };
 		C51F9BFB5930FA196907E790B5BBE09C /* Pods-LNAccountModule_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LNAccountModule_Example-dummy.m"; sourceTree = "<group>"; };
 		C591ABAE3F6562243BD24C7AFB43D941 /* Pods-LNAccountModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNAccountModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C699B3EE876465507A5845DC1341A7E8 /* LNModuleAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleAppDelegate.h; path = LNModuleCore/Classes/LNModuleAppDelegate.h; sourceTree = "<group>"; };
 		C72FD8AF5D59F80ECECF3BAC76C4DF84 /* Pods-LNAccountModule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LNAccountModule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C86D2ABF0AAA2238A95D08270EEFD44E /* LNModuleAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleAppDelegate.h; path = LNModuleCore/Classes/LNModuleAppDelegate.h; sourceTree = "<group>"; };
-		C91C5F149C4EF9CA3C208606DF0FA5D2 /* LNModuleAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNModuleAppDelegate.m; path = LNModuleCore/Classes/LNModuleAppDelegate.m; sourceTree = "<group>"; };
+		C889488DC9A0D381F34401BC08D71429 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LNModuleProtocol/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		CAEB066F1982FF1930A5CFCF0145A134 /* LNModuleProtocol.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LNModuleProtocol.modulemap; sourceTree = "<group>"; };
+		CBD684BCCA8E32A5681548B244D8F6BF /* LNModuleProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNModuleProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4C98AA5568A24579F9B5DDAF1DC034 /* Pods-LNAccountModule_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNAccountModule_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CE054822956F696CE0B9EB914D714FB4 /* LNModuleProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNModuleProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AC20C9A9FD5116F225C100E1D36E2B /* LNModuleCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleCore.h; path = LNModuleCore/Classes/LNModuleCore.h; sourceTree = "<group>"; };
 		D179FD17ECC7DA8BC820A5B1E127608A /* LNLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNLoginManager.h; path = LNAccountModule/Classes/LNLoginManager.h; sourceTree = "<group>"; };
-		D1B591DC261D60892E1B1AD23649A842 /* LNModuleCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleCore-prefix.pch"; sourceTree = "<group>"; };
+		D1AB9179B5F8FC92FB5E3283CD7B2729 /* LNLiveModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNLiveModuleProtocol.h; path = LNModuleProtocol/Classes/LNLiveModuleProtocol.h; sourceTree = "<group>"; };
 		D435320AD4A8B13D07027ADCA4EE5E01 /* Pods-LNAccountModule_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LNAccountModule_Tests.modulemap"; sourceTree = "<group>"; };
+		D6A0D1AE685081AAAD6D6719D18A265F /* UIViewController+Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Router.h"; path = "LNCommonKit/Classes/Router/UIViewController+Router.h"; sourceTree = "<group>"; };
+		D8F51A4E1FC5B80F10858162411E4CA8 /* LNCommonKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LNCommonKit.modulemap; sourceTree = "<group>"; };
 		DBEAA71333FE3884F71FAF0E6B0977F7 /* LNLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNLoginViewController.m; path = LNAccountModule/Classes/LNLoginViewController.m; sourceTree = "<group>"; };
-		DBED044036E21C7EF14E571424B018D1 /* LNModuleCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LNModuleCore-Info.plist"; sourceTree = "<group>"; };
 		DBFABB20E0DEA187B2D070C3E81CCD6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DD01239034A4F137A423BBBA10563A1A /* LNAccountModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNAccountModule.release.xcconfig; sourceTree = "<group>"; };
-		DFC42108FC95309BED2DEB2BF1EBDB4F /* LNModuleProtocol-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNModuleProtocol-umbrella.h"; sourceTree = "<group>"; };
+		DF6687B903DF71776984E0A4541ADDB2 /* LNModuleAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNModuleAppDelegate.m; path = LNModuleCore/Classes/LNModuleAppDelegate.m; sourceTree = "<group>"; };
+		E08254AE2243542C604C6D818ADC928D /* LNRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNRouter.h; path = LNCommonKit/Classes/Router/LNRouter.h; sourceTree = "<group>"; };
+		E3CD4BE15FAEA372F026D5A696870F8D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LNCommonKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		E798ED4758055D3366AC3D3A4E25E17E /* Pods-LNAccountModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNAccountModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EACF0B775EA18BF411109E47E7AFFF2B /* LNModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LNModuleManager.h; path = LNModuleCore/Classes/LNModuleManager.h; sourceTree = "<group>"; };
-		F436E87762964261DE54F253C1E7BD0D /* LNModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE892298A23964641ECEF7C95915C9C8 /* LNModuleProtocol.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LNModuleProtocol.modulemap; sourceTree = "<group>"; };
+		E8767373D6975144E81978D96B3F950E /* LNModuleCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleCore.release.xcconfig; sourceTree = "<group>"; };
+		F0604F180B566CED5103538FB4BFDEBE /* NSMutableArray+SafeOp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SafeOp.h"; path = "LNCommonKit/Classes/Foundation/NSMutableArray+SafeOp.h"; sourceTree = "<group>"; };
+		F3DD652FBA4C347FA0A65B60EE0109DF /* LNModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNModuleManager.m; path = LNModuleCore/Classes/LNModuleManager.m; sourceTree = "<group>"; };
+		F6F72A9DFAB21BEA1186293E2E08B56B /* NSMutableArray+SafeOp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SafeOp.m"; path = "LNCommonKit/Classes/Foundation/NSMutableArray+SafeOp.m"; sourceTree = "<group>"; };
+		F98116CEC95D71CE07EEE436C9784AB8 /* LNCommonKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNCommonKit-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0708A46BAC1073FD32FFE903F25665DD /* Frameworks */ = {
+		7595C4704CDEF575AA63FCD272D72259 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623254934C46ECE8D91C7FA825E2D0B3 /* Foundation.framework in Frameworks */,
-				2194ABC8F950CDB78138C1C13999564B /* LNModuleCore.framework in Frameworks */,
-				4010F687750531C85B8A7A355103D3DA /* LNModuleProtocol.framework in Frameworks */,
+				C7FA0779F02BFCB935BDB63214400D65 /* Foundation.framework in Frameworks */,
+				96D10C4B4B715A92062A98DD521531FF /* LNCommonKit.framework in Frameworks */,
+				BBAB00809732653816D665F729B97DCE /* LNModuleCore.framework in Frameworks */,
+				4B7390E3AFDCE863513DF6F7855A147C /* LNModuleProtocol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BE260DEAA512B499FF8925BEA2EE78B /* Frameworks */ = {
+		A1DD202896ED932B76860A56F7974FF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45EFF356DDC9E5952418CE82B43012C /* Foundation.framework in Frameworks */,
+				0CC5CB0A8E96BBC963CFD7389149825E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A515742FFAF491FABC40832C5434972F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7285ECB8BBF3E959C71510780841785 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,23 +261,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7DC947685CCB27F62B453DD8883D2B2 /* Frameworks */ = {
+		BCA6A844B61B4CCCAE3116264F428CA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FAAECD6B2438E9731D52FC24F29D43 /* Foundation.framework in Frameworks */,
+				8279CFDC9B261EDA024A041276C8467D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1676D1EB3224CA46247237CEFABED35 /* Frameworks */ = {
+		D9CCEC6105A40C95B63207DDE8DD0626 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75C2713C0A11CB9B953197B1E5B0021 /* Foundation.framework in Frameworks */,
+				E7C58EF42E11AF52480545C3AA1DB16F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D78EAB09EE4D51C5CF4DAD13E8EFCB80 /* Frameworks */ = {
+		E740F07CDEA431427196821D050B1303 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,24 +287,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02036CFFC02F475CD692D309C98E60BE /* Products */ = {
+		115F4E195B7F78971AE37A4326CB3F8B /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */,
-				97C5F52613FF87051B598BD03E4EAF41 /* LNAccountModule.framework */,
-				48AED3150945F7052D0E2667B953CD71 /* LNModuleCore.framework */,
-				6C11DDA615D28407390C6BFB99E9E548 /* LNModuleProtocol.framework */,
-				0885052F02450813A406FE59A996AD58 /* Pods_LNAccountModule_Example.framework */,
-				3AD549AF616D08A452E8EAFB50643515 /* Pods_LNAccountModule_Tests.framework */,
+				E08254AE2243542C604C6D818ADC928D /* LNRouter.h */,
+				8BECC47837F20BB27E0E88130B4544BD /* LNRouter.m */,
+				D6A0D1AE685081AAAD6D6719D18A265F /* UIViewController+Router.h */,
+				5C56EBF3A65FF737E059884082762DAE /* UIViewController+Router.m */,
 			);
-			name = Products;
+			name = Router;
 			sourceTree = "<group>";
 		};
-		20F6BF7A24D346772D38E20EA783E5F1 /* Pods */ = {
+		3BB073A8E003BEEB914A5D4620911F97 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F7BE2606D8D6D07B21BBEB0F60AB11D3 /* LNModuleCore */,
-				B5DD0648AB3AE409DDB0E7055AD49585 /* LNModuleProtocol */,
+				ADEAF576D7E7156A2A661E5FE9AB3258 /* LNCommonKit */,
+				8D6604E399EEF69BDA2E16A683EDDBD6 /* LNModuleCore */,
+				86CCA4533078FD1F1007BDFA64D27824 /* LNModuleProtocol */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -295,16 +350,16 @@
 			path = "Target Support Files/Pods-LNAccountModule_Example";
 			sourceTree = "<group>";
 		};
-		5AC4B707B7686B5DF2D89D8DE73D1AD1 /* Support Files */ = {
+		5C6B2E5B59986F97122034167FB0549F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE892298A23964641ECEF7C95915C9C8 /* LNModuleProtocol.modulemap */,
-				26D13AB0BAF9CA4BCAE27BE97E3C045D /* LNModuleProtocol-dummy.m */,
-				14CAB0238AD618C18F34D03C5EFA9E14 /* LNModuleProtocol-Info.plist */,
-				30B969A84CE380D0414FE64515D19660 /* LNModuleProtocol-prefix.pch */,
-				DFC42108FC95309BED2DEB2BF1EBDB4F /* LNModuleProtocol-umbrella.h */,
-				B22A6704999D34F5CF737A914370DB50 /* LNModuleProtocol.debug.xcconfig */,
-				B05F3B10D08D5025BC887E7CAE633A5B /* LNModuleProtocol.release.xcconfig */,
+				CAEB066F1982FF1930A5CFCF0145A134 /* LNModuleProtocol.modulemap */,
+				8E7728196096A0904FAA6C2E775D9A38 /* LNModuleProtocol-dummy.m */,
+				6EE5172B12CB8F9FA35FC51B002EA24D /* LNModuleProtocol-Info.plist */,
+				8ECD5CD57EDD8302579750696BD8F50F /* LNModuleProtocol-prefix.pch */,
+				95BDC1727BC6B48AAF1F7837F2AB442C /* LNModuleProtocol-umbrella.h */,
+				9FA585CBFB259769ED92C2837EE66F4E /* LNModuleProtocol.debug.xcconfig */,
+				436EB8688654832EACB66D1A1CF5796A /* LNModuleProtocol.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LNModuleProtocol";
@@ -328,6 +383,92 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		86CCA4533078FD1F1007BDFA64D27824 /* LNModuleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				9D54F1507C80DE7976A1B3DA5569EAF2 /* LNAccountModuleProtocol.h */,
+				5773B4458FE4A21883572C2CD66C7D9F /* LNFeedModuleProtocol.h */,
+				D1AB9179B5F8FC92FB5E3283CD7B2729 /* LNLiveModuleProtocol.h */,
+				89DE8E300C33DAAE8DE322B7724D8691 /* LNModuleBaseProtocol.h */,
+				980932B1F91814873A069B28526057D6 /* LNModuleProtocol.h */,
+				7F47875F623AD1683D4387C4F6183E76 /* LNVideoModuleProtocol.h */,
+				C889488DC9A0D381F34401BC08D71429 /* ReplaceMe.m */,
+				5C6B2E5B59986F97122034167FB0549F /* Support Files */,
+			);
+			name = LNModuleProtocol;
+			path = LNModuleProtocol;
+			sourceTree = "<group>";
+		};
+		8B0C91DA01F4132DFEF29680DD6BAE1C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8166915B0E4D001F29BC7694054BD88 /* LNModuleCore.modulemap */,
+				17E6D6BC195B5F663A905B979D391572 /* LNModuleCore-dummy.m */,
+				5BE3C67C1307F50F9CDF774DEE2F4327 /* LNModuleCore-Info.plist */,
+				BC3A16048134A4E67C3DC0EDB79E3763 /* LNModuleCore-prefix.pch */,
+				3C3C4E5FDC4D2951C5C1C9CC5E0556B0 /* LNModuleCore-umbrella.h */,
+				02D05036E94086F398FB575D09B65E6B /* LNModuleCore.debug.xcconfig */,
+				E8767373D6975144E81978D96B3F950E /* LNModuleCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LNModuleCore";
+			sourceTree = "<group>";
+		};
+		8D6604E399EEF69BDA2E16A683EDDBD6 /* LNModuleCore */ = {
+			isa = PBXGroup;
+			children = (
+				C699B3EE876465507A5845DC1341A7E8 /* LNModuleAppDelegate.h */,
+				DF6687B903DF71776984E0A4541ADDB2 /* LNModuleAppDelegate.m */,
+				D0AC20C9A9FD5116F225C100E1D36E2B /* LNModuleCore.h */,
+				48C755B1ED78282FB6D65F7B66AC8D4B /* LNModuleManager.h */,
+				F3DD652FBA4C347FA0A65B60EE0109DF /* LNModuleManager.m */,
+				92602968E8127B80C32D7B4BF618C3B6 /* ReplaceMe.m */,
+				8B0C91DA01F4132DFEF29680DD6BAE1C /* Support Files */,
+			);
+			name = LNModuleCore;
+			path = LNModuleCore;
+			sourceTree = "<group>";
+		};
+		9C8F5752917BB464267879881923A37F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */,
+				97C5F52613FF87051B598BD03E4EAF41 /* LNAccountModule.framework */,
+				87E00E863B0E34141B1E6AAD1D82EBE0 /* LNCommonKit.framework */,
+				48AED3150945F7052D0E2667B953CD71 /* LNModuleCore.framework */,
+				6C11DDA615D28407390C6BFB99E9E548 /* LNModuleProtocol.framework */,
+				0885052F02450813A406FE59A996AD58 /* Pods_LNAccountModule_Example.framework */,
+				3AD549AF616D08A452E8EAFB50643515 /* Pods_LNAccountModule_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCE4A24F8AE173B4B2770F3F33E2144 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8F51A4E1FC5B80F10858162411E4CA8 /* LNCommonKit.modulemap */,
+				77D852B508D089F38C3E44FEABA57351 /* LNCommonKit-dummy.m */,
+				028C5C10ED39388E6AB7D3B9B7F3960C /* LNCommonKit-Info.plist */,
+				F98116CEC95D71CE07EEE436C9784AB8 /* LNCommonKit-prefix.pch */,
+				0BF8A0236F0C02D162DD1A9C50E66F62 /* LNCommonKit-umbrella.h */,
+				9C1578586C46DACF1E7A9713D39FACB5 /* LNCommonKit.debug.xcconfig */,
+				AFDDE468D1A5470C02299E59FC21B44B /* LNCommonKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LNCommonKit";
+			sourceTree = "<group>";
+		};
+		A4BD363276E8DB2B573BD7F4F2749EE5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F0604F180B566CED5103538FB4BFDEBE /* NSMutableArray+SafeOp.h */,
+				F6F72A9DFAB21BEA1186293E2E08B56B /* NSMutableArray+SafeOp.m */,
+				9FBC6A71B6C1A184782DE73129D27456 /* NSMutableDictionary+SafeOp.h */,
+				2378A9C15F383E6AB0351558CE99EFE3 /* NSMutableDictionary+SafeOp.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
 		A6292CFFEF695C57ABD3DDFA5BFA88BC /* Pods-LNAccountModule_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,35 +485,36 @@
 			path = "Target Support Files/Pods-LNAccountModule_Tests";
 			sourceTree = "<group>";
 		};
-		B5DD0648AB3AE409DDB0E7055AD49585 /* LNModuleProtocol */ = {
+		ADEAF576D7E7156A2A661E5FE9AB3258 /* LNCommonKit */ = {
 			isa = PBXGroup;
 			children = (
-				7B971EE72ED363FCEA2EE9EBE0C8B6BA /* LNAccountModuleProtocol.h */,
-				44FAAA7932AFF1BADBA0594B332516D6 /* LNFeedModuleProtocol.h */,
-				4F480F494EDDD505D3FB9CF00F482170 /* LNLiveModuleProtocol.h */,
-				267365853B85455B5CB448D5BA6E0FDA /* LNModuleBaseProtocol.h */,
-				6DBF4C0DBBCF627FC3D94982EB117660 /* LNModuleProtocol.h */,
-				9BE4C5B0FB02969EB8F661265F20B8E1 /* LNVideoModuleProtocol.h */,
-				B247C0112B760D4EC24C5C0F53352A55 /* ReplaceMe.m */,
-				5AC4B707B7686B5DF2D89D8DE73D1AD1 /* Support Files */,
+				6D59EBFE65B004EB3C74D0D5AC1CBD6F /* LNCommonKit.h */,
+				E3CD4BE15FAEA372F026D5A696870F8D /* ReplaceMe.m */,
+				A4BD363276E8DB2B573BD7F4F2749EE5 /* Foundation */,
+				115F4E195B7F78971AE37A4326CB3F8B /* Router */,
+				9FCE4A24F8AE173B4B2770F3F33E2144 /* Support Files */,
 			);
-			name = LNModuleProtocol;
-			path = LNModuleProtocol;
+			name = LNCommonKit;
+			path = LNCommonKit;
 			sourceTree = "<group>";
 		};
-		C67314D9A15D6C79D80C270A22F3B4B1 /* Support Files */ = {
+		B50BA3F220D6B54AE8F1EFCB244A4BCF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6EE39139F201656C887DDDEC18C4DD2C /* LNModuleCore.modulemap */,
-				BEA22E16AFF1EF2A407ED0465ADB3A91 /* LNModuleCore-dummy.m */,
-				DBED044036E21C7EF14E571424B018D1 /* LNModuleCore-Info.plist */,
-				D1B591DC261D60892E1B1AD23649A842 /* LNModuleCore-prefix.pch */,
-				A8A4B3219862B9EAEC3FF7CB204F37BB /* LNModuleCore-umbrella.h */,
-				8E8F076CC9382FF426F7E7C9F4AA7E0B /* LNModuleCore.debug.xcconfig */,
-				25B47AF8E986167B932B52668803C852 /* LNModuleCore.release.xcconfig */,
+				3C7F3ADF16EDDCEC82D7460F8B6095D4 /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/LNModuleCore";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C8AAAF24992590160C8D81042D97E36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				503074D2CC312339DE47A5BDFA66995B /* LNCommonKit.framework */,
+				047D4D9A9729BAFC104AF6B0903E0782 /* LNModuleCore.framework */,
+				CBD684BCCA8E32A5681548B244D8F6BF /* LNModuleProtocol.framework */,
+				B50BA3F220D6B54AE8F1EFCB244A4BCF /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -380,9 +522,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7897B7AFC2D709F1686849102D604076 /* Development Pods */,
-				E3F8DA22B3AFFFB4FA8D3A46158F4AEC /* Frameworks */,
-				20F6BF7A24D346772D38E20EA783E5F1 /* Pods */,
-				02036CFFC02F475CD692D309C98E60BE /* Products */,
+				C8AAAF24992590160C8D81042D97E36B /* Frameworks */,
+				3BB073A8E003BEEB914A5D4620911F97 /* Pods */,
+				9C8F5752917BB464267879881923A37F /* Products */,
 				46B753FCA443F5A14975C34987448766 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -406,62 +548,64 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D7C32F3A4A003E58C6F095E70C8F9CCF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3DF2ED1B129DFEE1107C709C00E3323A /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E3F8DA22B3AFFFB4FA8D3A46158F4AEC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F436E87762964261DE54F253C1E7BD0D /* LNModuleCore.framework */,
-				CE054822956F696CE0B9EB914D714FB4 /* LNModuleProtocol.framework */,
-				D7C32F3A4A003E58C6F095E70C8F9CCF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F7BE2606D8D6D07B21BBEB0F60AB11D3 /* LNModuleCore */ = {
-			isa = PBXGroup;
-			children = (
-				C86D2ABF0AAA2238A95D08270EEFD44E /* LNModuleAppDelegate.h */,
-				C91C5F149C4EF9CA3C208606DF0FA5D2 /* LNModuleAppDelegate.m */,
-				B0E10BE0541C18B4CF213E03B62E0A95 /* LNModuleCore.h */,
-				EACF0B775EA18BF411109E47E7AFFF2B /* LNModuleManager.h */,
-				854F236950A01B86DEA79106FE88330D /* LNModuleManager.m */,
-				0B57E2F465C4E51D02F1794172930D1F /* ReplaceMe.m */,
-				C67314D9A15D6C79D80C270A22F3B4B1 /* Support Files */,
-			);
-			name = LNModuleCore;
-			path = LNModuleCore;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5D37EA71029D3D4921292BF605CA608D /* Headers */ = {
+		1472C47FECDA3525D92CC9F1439FBFAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DD3A3D0BB73E818B7F51B836E6C0AAF /* LNAccountModule-umbrella.h in Headers */,
-				9978D9D5CEEC549EE2780D504D27A033 /* LNAccountModule.h in Headers */,
-				250C016AC1F89F36952D5531CB042CCB /* LNAccountModuleConfig.h in Headers */,
-				AFC19834B0E568DFABE0E63B0DD0E9BA /* LNLoginManager.h in Headers */,
-				D28A881A8C0C74A8A58344DEFA487EC2 /* LNLoginViewController.h in Headers */,
+				55FD6AB9F16AE54F36F03467BE5178A8 /* Pods-LNAccountModule_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A56BC3013B2E510FBEDB879F09637E71 /* Headers */ = {
+		29F9E7F18FE4DFCBD24D2C1BB4DD32E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12B519519937ABFDBDAA6E1066DAAE7 /* LNModuleAppDelegate.h in Headers */,
-				84AA898C09F865363861773159218E7A /* LNModuleCore-umbrella.h in Headers */,
-				D47C91516ED83F80329E6B235F6988BD /* LNModuleCore.h in Headers */,
-				33063C5823DB89ACCB7F1CF94DC7660E /* LNModuleManager.h in Headers */,
+				6B9C67DAB23665871345205E0A5760B1 /* LNModuleAppDelegate.h in Headers */,
+				45F02B0B2C4B04BE822853365AC4CDF3 /* LNModuleCore-umbrella.h in Headers */,
+				E80F9A08526092646A1FE169E85229FB /* LNModuleCore.h in Headers */,
+				A7FDADF8211592BF51E66C8BE23ACFDF /* LNModuleManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378D712B5393024CBB549EF792491D0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BE8A29E57EC10D63C4921DC74B54B8 /* LNAccountModule-umbrella.h in Headers */,
+				E44892007BDF91FDE1D2160D3D02F3D3 /* LNAccountModule.h in Headers */,
+				FC10B6925CB587D1AD2CF407F64A0DEB /* LNAccountModuleConfig.h in Headers */,
+				E3B7A4DFF9EB8EE264E25F5CDC3EBF36 /* LNLoginManager.h in Headers */,
+				C9EA0BB1240AD147422CF4472252A2C8 /* LNLoginViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DC3427C424CDE6EBA2B9DB577AAADD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06E0B371DC880D61353DD2E5857486F /* LNCommonKit-umbrella.h in Headers */,
+				554A6EB9AAC2FFA5A2B3E8FD13DBB78A /* LNCommonKit.h in Headers */,
+				EBB1D9C169E8B7EB485B9B1738439BCE /* LNRouter.h in Headers */,
+				8EC21FD9D3C6C9922FB1D4E080FF2AB4 /* NSMutableArray+SafeOp.h in Headers */,
+				BEDA683CB5E1519E9BCC23B0DFB9DB17 /* NSMutableDictionary+SafeOp.h in Headers */,
+				EB034A8397ED86C9CD691E8FBC81094D /* UIViewController+Router.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A096C5A7C01539C00FEA276D4B6167E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4BE303C0443B56A7B05096C40F6589 /* LNAccountModuleProtocol.h in Headers */,
+				2F615CF8CDA9FF12200C91B7C2071330 /* LNFeedModuleProtocol.h in Headers */,
+				6CCEDD8249D5C7553C51016AC391D884 /* LNLiveModuleProtocol.h in Headers */,
+				7050A95408C49319768617E643500A3F /* LNModuleBaseProtocol.h in Headers */,
+				4A42E9EDF14EA3C70554E535905F58FF /* LNModuleProtocol-umbrella.h in Headers */,
+				FF20E854D942F72290AA0DADD34C733E /* LNModuleProtocol.h in Headers */,
+				0CD0747EB4A2F01A48D4E5DDC2A3740B /* LNVideoModuleProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,46 +617,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F30A17F11CDF63692C240465A1F74EA2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3E8F9F2EA47480E62D78EDDA0DEC107 /* LNAccountModuleProtocol.h in Headers */,
-				C2EE6DE5E96618EACADFFB657BC4EA70 /* LNFeedModuleProtocol.h in Headers */,
-				5A480DB0D4B00D9F075CB210876F288A /* LNLiveModuleProtocol.h in Headers */,
-				8E87CFCCB24DE96FFF400DF24BABD1BF /* LNModuleBaseProtocol.h in Headers */,
-				9C195F69BA4606E4B38C1D0BBB596C20 /* LNModuleProtocol-umbrella.h in Headers */,
-				E7859B697D0C6B2E04D3DB890614266E /* LNModuleProtocol.h in Headers */,
-				2ACE880EAF6EB0C232EE778B62CC46D8 /* LNVideoModuleProtocol.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC64FE56C92EBAF00FEA9EDBA51BCBC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5E7374AB9A9242E0C8F4B8629352A69 /* Pods-LNAccountModule_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5372E72EB5597464E9DAE60A1778BBE5 /* LNAccountModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C5ACB13134C3EA64663507BA5534C68 /* Build configuration list for PBXNativeTarget "LNAccountModule" */;
+			buildConfigurationList = 2CC8935257A583A6E49DD1EB340E0008 /* Build configuration list for PBXNativeTarget "LNAccountModule" */;
 			buildPhases = (
-				5D37EA71029D3D4921292BF605CA608D /* Headers */,
-				A29B3724BF1E9AC67C8B8772C1EA14D4 /* Sources */,
-				0708A46BAC1073FD32FFE903F25665DD /* Frameworks */,
-				729B01EE1B23FA1B026E067A6D543D46 /* Resources */,
+				378D712B5393024CBB549EF792491D0B /* Headers */,
+				1D9B030B3B32A2D3820A262677EEA797 /* Sources */,
+				7595C4704CDEF575AA63FCD272D72259 /* Frameworks */,
+				A22A02DFEDC0E8651C02280A10E5661F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6109C385527D5D741B29AF417C967551 /* PBXTargetDependency */,
-				877008C6ABE534A79A3773365ABD6C9B /* PBXTargetDependency */,
-				F5617D0189D5F559B37E73B17E654B3A /* PBXTargetDependency */,
+				2E76ECA5283CE7FB3C58832AC1558903 /* PBXTargetDependency */,
+				990B77AF3A45129BAFA79DFA9C0DA1EF /* PBXTargetDependency */,
+				E4AD84748F5274837B22A8DE6278B336 /* PBXTargetDependency */,
+				22A308A7D575F76FE9075A0A0F911C69 /* PBXTargetDependency */,
 			);
 			name = LNAccountModule;
 			productName = LNAccountModule;
@@ -521,11 +644,11 @@
 		};
 		73C7B85C28ECE109F775F9300FD51E3B /* LNAccountModule-LNAccountModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52BEC0F59760013D366EFA3719B7800F /* Build configuration list for PBXNativeTarget "LNAccountModule-LNAccountModule" */;
+			buildConfigurationList = F0047CD2CEF62ABA922E6A9A890C1A43 /* Build configuration list for PBXNativeTarget "LNAccountModule-LNAccountModule" */;
 			buildPhases = (
-				48A1D0524234EF2385C368F2CE454841 /* Sources */,
-				D78EAB09EE4D51C5CF4DAD13E8EFCB80 /* Frameworks */,
-				123D1410A008CD7D34D5AD822F634339 /* Resources */,
+				A8021EDF401936813AD7D9B73BC15672 /* Sources */,
+				E740F07CDEA431427196821D050B1303 /* Frameworks */,
+				9341D6FFD08A4CAF4B792C6681CC2172 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -548,28 +671,47 @@
 			buildRules = (
 			);
 			dependencies = (
-				A3962A685800BE79EF2D6A8C4CCEF465 /* PBXTargetDependency */,
+				31C18615D4B9D2F7E9C50AEA0009635D /* PBXTargetDependency */,
 			);
 			name = "Pods-LNAccountModule_Tests";
 			productName = "Pods-LNAccountModule_Tests";
 			productReference = 3AD549AF616D08A452E8EAFB50643515 /* Pods_LNAccountModule_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B32743B66FBC4DA47ABB3CF41175A751 /* Pods-LNAccountModule_Example */ = {
+		91A29DC8D32830C5C4112FA44227AFC1 /* LNCommonKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 408A55C01CEC42A08392B8526ECD7EF4 /* Build configuration list for PBXNativeTarget "Pods-LNAccountModule_Example" */;
+			buildConfigurationList = 4537AF256F868D1516DEC066883643CE /* Build configuration list for PBXNativeTarget "LNCommonKit" */;
 			buildPhases = (
-				FC64FE56C92EBAF00FEA9EDBA51BCBC1 /* Headers */,
-				1FF4B6777EA076E73C34B9A73F2DF578 /* Sources */,
-				B7DC947685CCB27F62B453DD8883D2B2 /* Frameworks */,
-				72148027538C197C7E3D6FA51CF58E45 /* Resources */,
+				52DC3427C424CDE6EBA2B9DB577AAADD /* Headers */,
+				543CDF60DFD5A391EEF9636A9DD663D2 /* Sources */,
+				D9CCEC6105A40C95B63207DDE8DD0626 /* Frameworks */,
+				53FE9755C0DA0FC9B82C89B8CD9A4F28 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E2C79F84FE4430E3A1CC953F1CC145C /* PBXTargetDependency */,
-				4D8F948791A493D2AC73884256C0FA9A /* PBXTargetDependency */,
-				7392CF00B3CAF237A8EA95414051CA7E /* PBXTargetDependency */,
+			);
+			name = LNCommonKit;
+			productName = LNCommonKit;
+			productReference = 87E00E863B0E34141B1E6AAD1D82EBE0 /* LNCommonKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B32743B66FBC4DA47ABB3CF41175A751 /* Pods-LNAccountModule_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8D238F72D7F587616B64AC7DB37F4F /* Build configuration list for PBXNativeTarget "Pods-LNAccountModule_Example" */;
+			buildPhases = (
+				1472C47FECDA3525D92CC9F1439FBFAF /* Headers */,
+				B68CB6C4FB076455063D06ECD483A8B6 /* Sources */,
+				A515742FFAF491FABC40832C5434972F /* Frameworks */,
+				8A9883CF1DFEDD793905946C0CBE9D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268B049BA3305ECD16DFE987593D74FF /* PBXTargetDependency */,
+				0CB5B7CEB48DE2BA33AE4A99EE71D652 /* PBXTargetDependency */,
+				6AFFB6640B63603E12D15AE5551DA688 /* PBXTargetDependency */,
+				E715D3BFD169AD4C9E3A1CD8E48005C2 /* PBXTargetDependency */,
 			);
 			name = "Pods-LNAccountModule_Example";
 			productName = "Pods-LNAccountModule_Example";
@@ -578,12 +720,12 @@
 		};
 		B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC733DA917F6524F9C0400FA16A638B0 /* Build configuration list for PBXNativeTarget "LNModuleCore" */;
+			buildConfigurationList = 212421990F158EBCE9759B0B77C1B801 /* Build configuration list for PBXNativeTarget "LNModuleCore" */;
 			buildPhases = (
-				A56BC3013B2E510FBEDB879F09637E71 /* Headers */,
-				01D13FB9D26F70190F6B6297A880E359 /* Sources */,
-				1BE260DEAA512B499FF8925BEA2EE78B /* Frameworks */,
-				9A818594E97A217B6BC5F7A1D1D02984 /* Resources */,
+				29F9E7F18FE4DFCBD24D2C1BB4DD32E9 /* Headers */,
+				0901D3005025877EC847E1FDDA60C4A0 /* Sources */,
+				BCA6A844B61B4CCCAE3116264F428CA3 /* Frameworks */,
+				A659F9EBB70F2A1E4EAAECF810ECE408 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -596,12 +738,12 @@
 		};
 		C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D65A23D3A1AB675A3B9519F7C6A00614 /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */;
+			buildConfigurationList = 84F295A58A117EB359CA658DF2360BBD /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */;
 			buildPhases = (
-				F30A17F11CDF63692C240465A1F74EA2 /* Headers */,
-				9A1A749CDE6E2EFD127FDD88270E41E3 /* Sources */,
-				C1676D1EB3224CA46247237CEFABED35 /* Frameworks */,
-				CF955A6D4D9B4F58961CD9033DB2D350 /* Resources */,
+				A096C5A7C01539C00FEA276D4B6167E8 /* Headers */,
+				607E79DBAA74131B435DDEA8E9D8AE33 /* Sources */,
+				A1DD202896ED932B76860A56F7974FF7 /* Frameworks */,
+				0184688BA310FF82648E82C91F8CAD5A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -630,12 +772,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 02036CFFC02F475CD692D309C98E60BE /* Products */;
+			productRefGroup = 9C8F5752917BB464267879881923A37F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5372E72EB5597464E9DAE60A1778BBE5 /* LNAccountModule */,
 				73C7B85C28ECE109F775F9300FD51E3B /* LNAccountModule-LNAccountModule */,
+				91A29DC8D32830C5C4112FA44227AFC1 /* LNCommonKit */,
 				B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */,
 				C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */,
 				B32743B66FBC4DA47ABB3CF41175A751 /* Pods-LNAccountModule_Example */,
@@ -645,30 +788,44 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		123D1410A008CD7D34D5AD822F634339 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CEF987E72F048E91ECEA678A923DE5D /* LNLoginViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72148027538C197C7E3D6FA51CF58E45 /* Resources */ = {
+		0184688BA310FF82648E82C91F8CAD5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		729B01EE1B23FA1B026E067A6D543D46 /* Resources */ = {
+		53FE9755C0DA0FC9B82C89B8CD9A4F28 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D024684D73A7CADE4DAAB5E7080D6E /* LNAccountModule.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A818594E97A217B6BC5F7A1D1D02984 /* Resources */ = {
+		8A9883CF1DFEDD793905946C0CBE9D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341D6FFD08A4CAF4B792C6681CC2172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EA179BEB0B4F3457DBFA802BB3CF18 /* LNLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22A02DFEDC0E8651C02280A10E5661F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFCFCF36DDCBA6AE6E9D03966D29138 /* LNAccountModule.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A659F9EBB70F2A1E4EAAECF810ECE408 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -682,39 +839,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF955A6D4D9B4F58961CD9033DB2D350 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01D13FB9D26F70190F6B6297A880E359 /* Sources */ = {
+		0901D3005025877EC847E1FDDA60C4A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754EE020C34F3F2CF623F054E0EB60DE /* LNModuleAppDelegate.m in Sources */,
-				15F74C147554236E9C9B62F8BD04F00A /* LNModuleCore-dummy.m in Sources */,
-				6E5C68C2D79BEE19F7973D5A1F2D8788 /* LNModuleManager.m in Sources */,
-				FF5A3A4B5836128F71C77809FD7F71D3 /* ReplaceMe.m in Sources */,
+				4FB899FAD395099B1030E52036ADB7F0 /* LNModuleAppDelegate.m in Sources */,
+				7496E0AD3D93775CE99ECE7900885BD2 /* LNModuleCore-dummy.m in Sources */,
+				F42489E23569E17A2F638EAEBD64F2D0 /* LNModuleManager.m in Sources */,
+				4DF32D778C410E8FE8BCFB04723425E4 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FF4B6777EA076E73C34B9A73F2DF578 /* Sources */ = {
+		1D9B030B3B32A2D3820A262677EEA797 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BF3C840211AE0D49E2D5B6F39159445 /* Pods-LNAccountModule_Example-dummy.m in Sources */,
+				D9964FB13B2FB8E32AAA7C8767F0C3CC /* LNAccountModule-dummy.m in Sources */,
+				1D1DEC33F96023FFD9427D0F44432560 /* LNAccountModuleConfig.m in Sources */,
+				1BECE286F0E665FDCE067C88D94C7838 /* LNLoginManager.m in Sources */,
+				BA384820B67EC3637D1F9A08A46702AD /* LNLoginViewController.m in Sources */,
+				6B1857166C3666494C8223E78ED80E01 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48A1D0524234EF2385C368F2CE454841 /* Sources */ = {
+		543CDF60DFD5A391EEF9636A9DD663D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BD1E9AE0EDDFD7E02063EF6DAC1EFC /* LNCommonKit-dummy.m in Sources */,
+				82E828230AE4D8D9D8B05C405FAFDC37 /* LNRouter.m in Sources */,
+				CBD1FC81F556DAB26F94AC34DB22C7AB /* NSMutableArray+SafeOp.m in Sources */,
+				8A1BD9CED58FCD60A8C4998541FF217A /* NSMutableDictionary+SafeOp.m in Sources */,
+				5FCFE9EF10C470E3BF2528146D8D4435 /* ReplaceMe.m in Sources */,
+				D2F76FA0A0255599C6DC4BA41ACF0061 /* UIViewController+Router.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,75 +886,137 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A1A749CDE6E2EFD127FDD88270E41E3 /* Sources */ = {
+		607E79DBAA74131B435DDEA8E9D8AE33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFAC7554E9DEF408D1D7E55EBCE029E9 /* LNModuleProtocol-dummy.m in Sources */,
-				CFA3C5B66D21E7A6476C6FFF7453A149 /* ReplaceMe.m in Sources */,
+				DC6431C9ADF4EA8BA058AEFC9603F394 /* LNModuleProtocol-dummy.m in Sources */,
+				B4593D9B2EF3216D2FCBC3B49B441FBB /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29B3724BF1E9AC67C8B8772C1EA14D4 /* Sources */ = {
+		A8021EDF401936813AD7D9B73BC15672 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F7AE7DB11914212AB9518B78B55EE3 /* LNAccountModule-dummy.m in Sources */,
-				B7D7223985F01C9863EC8ED95C75CD20 /* LNAccountModuleConfig.m in Sources */,
-				9CBF0DED5D8BBB532CC4873203DB4465 /* LNLoginManager.m in Sources */,
-				340BE9AE432CEF54494A2D4AAB5EF306 /* LNLoginViewController.m in Sources */,
-				AE280B38D828FA86728D9D5735CAC2C2 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68CB6C4FB076455063D06ECD483A8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A904192A29B7B0FBE95F8344E63936EE /* Pods-LNAccountModule_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D8F948791A493D2AC73884256C0FA9A /* PBXTargetDependency */ = {
+		0CB5B7CEB48DE2BA33AE4A99EE71D652 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LNModuleCore;
-			target = B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */;
-			targetProxy = 2865FA465FA777997EEA02CF976ACCF8 /* PBXContainerItemProxy */;
+			name = LNCommonKit;
+			target = 91A29DC8D32830C5C4112FA44227AFC1 /* LNCommonKit */;
+			targetProxy = 22EB645D12EE503B3575544FC499E2AD /* PBXContainerItemProxy */;
 		};
-		5E2C79F84FE4430E3A1CC953F1CC145C /* PBXTargetDependency */ = {
+		22A308A7D575F76FE9075A0A0F911C69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LNModuleProtocol;
+			target = C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */;
+			targetProxy = 722371E75F84BB63A6C7FAB1C16CEA3D /* PBXContainerItemProxy */;
+		};
+		268B049BA3305ECD16DFE987593D74FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LNAccountModule;
 			target = 5372E72EB5597464E9DAE60A1778BBE5 /* LNAccountModule */;
-			targetProxy = 88C61226744DC5FA395CC98362647C22 /* PBXContainerItemProxy */;
+			targetProxy = C6407DEEAA2811CB23F64F9A0C0E9D5C /* PBXContainerItemProxy */;
 		};
-		6109C385527D5D741B29AF417C967551 /* PBXTargetDependency */ = {
+		2E76ECA5283CE7FB3C58832AC1558903 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LNAccountModule-LNAccountModule";
 			target = 73C7B85C28ECE109F775F9300FD51E3B /* LNAccountModule-LNAccountModule */;
-			targetProxy = 860C05B061246024FA01E9B484DE5D37 /* PBXContainerItemProxy */;
+			targetProxy = C98AA560BDB4F658CEF82A9DF30617F7 /* PBXContainerItemProxy */;
 		};
-		7392CF00B3CAF237A8EA95414051CA7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LNModuleProtocol;
-			target = C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */;
-			targetProxy = 3759B311C10AFFCCB7D064EF77183D10 /* PBXContainerItemProxy */;
-		};
-		877008C6ABE534A79A3773365ABD6C9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LNModuleCore;
-			target = B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */;
-			targetProxy = CB21BC9F2A896ACA9BD6C8D09DFBDB6B /* PBXContainerItemProxy */;
-		};
-		A3962A685800BE79EF2D6A8C4CCEF465 /* PBXTargetDependency */ = {
+		31C18615D4B9D2F7E9C50AEA0009635D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LNAccountModule_Example";
 			target = B32743B66FBC4DA47ABB3CF41175A751 /* Pods-LNAccountModule_Example */;
-			targetProxy = F6EF4DD2C0856185AFB1EE70D8C9A7A7 /* PBXContainerItemProxy */;
+			targetProxy = 8B79C27317F9BC5270835FD71A37A83C /* PBXContainerItemProxy */;
 		};
-		F5617D0189D5F559B37E73B17E654B3A /* PBXTargetDependency */ = {
+		6AFFB6640B63603E12D15AE5551DA688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LNModuleCore;
+			target = B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */;
+			targetProxy = DC092B66C197ED457771CEC0EFD689F1 /* PBXContainerItemProxy */;
+		};
+		990B77AF3A45129BAFA79DFA9C0DA1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LNCommonKit;
+			target = 91A29DC8D32830C5C4112FA44227AFC1 /* LNCommonKit */;
+			targetProxy = 014F63366416749C8E99EBEAF7F4F0F5 /* PBXContainerItemProxy */;
+		};
+		E4AD84748F5274837B22A8DE6278B336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LNModuleCore;
+			target = B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */;
+			targetProxy = FA5A3B3C840D6F4DB381D9CAA358B0E3 /* PBXContainerItemProxy */;
+		};
+		E715D3BFD169AD4C9E3A1CD8E48005C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LNModuleProtocol;
 			target = C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */;
-			targetProxy = 39BA50DA0AC33AB46D73EC4388FE4779 /* PBXContainerItemProxy */;
+			targetProxy = 5086EE06CEF95B49ECAF67E317DABF6C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0AD8320F93EF50C755BF8B75C6806C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFDDE468D1A5470C02299E59FC21B44B /* LNCommonKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNCommonKit/LNCommonKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNCommonKit/LNCommonKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNCommonKit/LNCommonKit.modulemap";
+				PRODUCT_MODULE_NAME = LNCommonKit;
+				PRODUCT_NAME = LNCommonKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0E01E9041D66D2AF51AC9866EF20512C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837B96B80C81BA9F4D0DB5F135D03F34 /* LNAccountModule.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNAccountModule";
+				IBSC_MODULE = LNAccountModule;
+				INFOPLIST_FILE = "Target Support Files/LNAccountModule/ResourceBundle-LNAccountModule-LNAccountModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = LNAccountModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -861,11 +1083,10 @@
 			};
 			name = Debug;
 		};
-		3DF92393F3EF9B8C29C352F1AA9B1580 /* Debug */ = {
+		2C8120468D9C3D027003DF5A5797CB53 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C591ABAE3F6562243BD24C7AFB43D941 /* Pods-LNAccountModule_Example.debug.xcconfig */;
+			baseConfigurationReference = 02D05036E94086F398FB575D09B65E6B /* LNModuleCore.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -874,24 +1095,161 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleCore;
+				PRODUCT_NAME = LNModuleCore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		30C74348509F1F56CD3A6C4C5CF58762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8767373D6975144E81978D96B3F950E /* LNModuleCore.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleCore;
+				PRODUCT_NAME = LNModuleCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BD7D427D45C7CDBE5A5F5EC6C917F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA585CBFB259769ED92C2837EE66F4E /* LNModuleProtocol.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleProtocol;
+				PRODUCT_NAME = LNModuleProtocol;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E9CD22FF0EA76942EB56F3976CB9A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436EB8688654832EACB66D1A1CF5796A /* LNModuleProtocol.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleProtocol;
+				PRODUCT_NAME = LNModuleProtocol;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51327A95ECC7974FFD2B2CC0E3A343D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1578586C46DACF1E7A9713D39FACB5 /* LNCommonKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNCommonKit/LNCommonKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNCommonKit/LNCommonKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNCommonKit/LNCommonKit.modulemap";
+				PRODUCT_MODULE_NAME = LNCommonKit;
+				PRODUCT_NAME = LNCommonKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59A90C38C1CFDC81CC9CC52C293DBAE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD01239034A4F137A423BBBA10563A1A /* LNAccountModule.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNAccountModule";
+				IBSC_MODULE = LNAccountModule;
+				INFOPLIST_FILE = "Target Support Files/LNAccountModule/ResourceBundle-LNAccountModule-LNAccountModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = LNAccountModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		6E922AD30E23A09957A4F4B82DEB0BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -925,178 +1283,7 @@
 			};
 			name = Debug;
 		};
-		7ADE392F1BB567C4BFA78BA2402FFB07 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C362A33DEBA01BC5D9A25067E05C4CE /* Pods-LNAccountModule_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7DD8BA03AE8E0D085017CDDB160F608A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B22A6704999D34F5CF737A914370DB50 /* LNModuleProtocol.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleProtocol;
-				PRODUCT_NAME = LNModuleProtocol;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8668C912D3559868167739794C682222 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25B47AF8E986167B932B52668803C852 /* LNModuleCore.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleCore;
-				PRODUCT_NAME = LNModuleCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8A88551871BFD57EA339CB98044052C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 837B96B80C81BA9F4D0DB5F135D03F34 /* LNAccountModule.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNAccountModule";
-				IBSC_MODULE = LNAccountModule;
-				INFOPLIST_FILE = "Target Support Files/LNAccountModule/ResourceBundle-LNAccountModule-LNAccountModule-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = LNAccountModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		8F4CB51CCCF3BF18D88E1F69A4D71041 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E8F076CC9382FF426F7E7C9F4AA7E0B /* LNModuleCore.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleCore;
-				PRODUCT_NAME = LNModuleCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C2D0DD88CB5D3F923D93034EB2434A92 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B05F3B10D08D5025BC887E7CAE633A5B /* LNModuleProtocol.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleProtocol;
-				PRODUCT_NAME = LNModuleProtocol;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C3574F1E084B1D31F07A95D777C52C18 /* Release */ = {
+		7B5EAF2AA4270236F3C177396D6DCCF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD01239034A4F137A423BBBA10563A1A /* LNAccountModule.release.xcconfig */;
 			buildSettings = {
@@ -1126,6 +1313,36 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		B07B4DB4229216919B937C0942B1A12F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837B96B80C81BA9F4D0DB5F135D03F34 /* LNAccountModule.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNAccountModule/LNAccountModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNAccountModule/LNAccountModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNAccountModule/LNAccountModule.modulemap";
+				PRODUCT_MODULE_NAME = LNAccountModule;
+				PRODUCT_NAME = LNAccountModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		C4F4AD085D005A5E913ED4DF1A45B6BB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1222,26 +1439,11 @@
 			};
 			name = Release;
 		};
-		E4B4503F94F24F38CEBDEA4A0854DE82 /* Release */ = {
+		DCE74514EF6290978ACE556F158855BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD01239034A4F137A423BBBA10563A1A /* LNAccountModule.release.xcconfig */;
+			baseConfigurationReference = C591ABAE3F6562243BD24C7AFB43D941 /* Pods-LNAccountModule_Example.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNAccountModule";
-				IBSC_MODULE = LNAccountModule;
-				INFOPLIST_FILE = "Target Support Files/LNAccountModule/ResourceBundle-LNAccountModule-LNAccountModule-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = LNAccountModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		F7C091DBBE09870D689E3026A1439D67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 837B96B80C81BA9F4D0DB5F135D03F34 /* LNAccountModule.debug.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1250,23 +1452,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNAccountModule/LNAccountModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNAccountModule/LNAccountModule-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNAccountModule/LNAccountModule.modulemap";
-				PRODUCT_MODULE_NAME = LNAccountModule;
-				PRODUCT_NAME = LNAccountModule;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		F9333F5EB58FD5E2A1BBAA1F1361BF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C362A33DEBA01BC5D9A25067E05C4CE /* Pods-LNAccountModule_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1280,11 +1516,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		408A55C01CEC42A08392B8526ECD7EF4 /* Build configuration list for PBXNativeTarget "Pods-LNAccountModule_Example" */ = {
+		212421990F158EBCE9759B0B77C1B801 /* Build configuration list for PBXNativeTarget "LNModuleCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DF92393F3EF9B8C29C352F1AA9B1580 /* Debug */,
-				7ADE392F1BB567C4BFA78BA2402FFB07 /* Release */,
+				2C8120468D9C3D027003DF5A5797CB53 /* Debug */,
+				30C74348509F1F56CD3A6C4C5CF58762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CC8935257A583A6E49DD1EB340E0008 /* Build configuration list for PBXNativeTarget "LNAccountModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B4DB4229216919B937C0942B1A12F /* Debug */,
+				7B5EAF2AA4270236F3C177396D6DCCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8D238F72D7F587616B64AC7DB37F4F /* Build configuration list for PBXNativeTarget "Pods-LNAccountModule_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE74514EF6290978ACE556F158855BE /* Debug */,
+				F9333F5EB58FD5E2A1BBAA1F1361BF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4537AF256F868D1516DEC066883643CE /* Build configuration list for PBXNativeTarget "LNCommonKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51327A95ECC7974FFD2B2CC0E3A343D4 /* Debug */,
+				0AD8320F93EF50C755BF8B75C6806C0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1298,38 +1561,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52BEC0F59760013D366EFA3719B7800F /* Build configuration list for PBXNativeTarget "LNAccountModule-LNAccountModule" */ = {
+		84F295A58A117EB359CA658DF2360BBD /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A88551871BFD57EA339CB98044052C5 /* Debug */,
-				E4B4503F94F24F38CEBDEA4A0854DE82 /* Release */,
+				4BD7D427D45C7CDBE5A5F5EC6C917F0E /* Debug */,
+				4E9CD22FF0EA76942EB56F3976CB9A5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C5ACB13134C3EA64663507BA5534C68 /* Build configuration list for PBXNativeTarget "LNAccountModule" */ = {
+		F0047CD2CEF62ABA922E6A9A890C1A43 /* Build configuration list for PBXNativeTarget "LNAccountModule-LNAccountModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7C091DBBE09870D689E3026A1439D67 /* Debug */,
-				C3574F1E084B1D31F07A95D777C52C18 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC733DA917F6524F9C0400FA16A638B0 /* Build configuration list for PBXNativeTarget "LNModuleCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F4CB51CCCF3BF18D88E1F69A4D71041 /* Debug */,
-				8668C912D3559868167739794C682222 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D65A23D3A1AB675A3B9519F7C6A00614 /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DD8BA03AE8E0D085017CDDB160F608A /* Debug */,
-				C2D0DD88CB5D3F923D93034EB2434A92 /* Release */,
+				0E01E9041D66D2AF51AC9866EF20512C /* Debug */,
+				59A90C38C1CFDC81CC9CC52C293DBAE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

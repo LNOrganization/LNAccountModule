@@ -1,0 +1,6 @@
+framework module LNCommonKit {
+  umbrella header "LNCommonKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

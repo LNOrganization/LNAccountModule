@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/LNAccountModule" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleCore" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleProtocol"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/LNAccountModule" "${PODS_CONFIGURATION_BUILD_DIR}/LNCommonKit" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleCore" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleProtocol"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/LNAccountModule/LNAccountModule.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleCore/LNModuleCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleProtocol/LNModuleProtocol.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "LNAccountModule" -framework "LNModuleCore" -framework "LNModuleProtocol"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/LNAccountModule/LNAccountModule.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/LNCommonKit/LNCommonKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleCore/LNModuleCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/LNModuleProtocol/LNModuleProtocol.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "LNAccountModule" -framework "LNCommonKit" -framework "LNModuleCore" -framework "LNModuleProtocol"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

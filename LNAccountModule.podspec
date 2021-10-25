@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 #  s.resource = 'LNAccountModule/Classes/**/*.xib'
   s.dependency 'LNModuleProtocol', '~>0.1.3'
   s.dependency 'LNModuleCore', '~>0.1.6'
-
+  s.dependency 'LNCommonKit', '~>0.1.1'
   s.resource_bundles = {
     'LNAccountModule' => ['LNAccountModule/Classes/**/*.xib']
   }
