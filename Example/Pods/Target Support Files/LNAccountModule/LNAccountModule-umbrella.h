@@ -11,7 +11,9 @@
 #endif
 
 #import "LNAccountModule.h"
+#import "LNAccountModuleConfig.h"
 #import "LNLoginManager.h"
+#import "LNLoginViewController.h"
 
 FOUNDATION_EXPORT double LNAccountModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char LNAccountModuleVersionString[];

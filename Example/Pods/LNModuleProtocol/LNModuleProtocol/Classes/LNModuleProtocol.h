@@ -6,4 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <LNModuleCore/LNModuleCore.h>
+
+#import "LNFeedModuleProtocol.h"
+#import "LNLiveModuleProtocol.h"
+#import "LNVideoModuleProtocol.h"
+#import "LNAccountModuleProtocol.h"

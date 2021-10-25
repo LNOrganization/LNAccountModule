@@ -7,11 +7,23 @@
 //
 
 #import "LNAppDelegate.h"
+#import <LNModuleCore/LNModuleCore.h>
+#import <LNModuleProtocol/LNAccountModuleProtocol.h>
 
 @implementation LNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    id <LNAccountModuleProtocol> accountModule = [[LNModuleManager sharedInstance] impInstanceForProtocol:@protocol(LNAccountModuleProtocol)];
+    [accountModule registerLogoutCompletionNotify:^(NSDictionary *accountInfo, NSString *errMsg) {
+        NSLog(@"%@", accountInfo);
+    } forKey:@"kLNAppDelegateLogout"];
+    [accountModule logout];
+    [accountModule registerLoginCompletionNotify:^(NSDictionary *accountInfo, NSString *errMsg) {
+        NSLog(@"%@", accountInfo);
+    } forKey:@"kLNAppDelegateLogin"];
+    
     // Override point for customization after application launch.
     return YES;
 }

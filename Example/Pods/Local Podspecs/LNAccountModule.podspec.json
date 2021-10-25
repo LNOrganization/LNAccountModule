@@ -18,13 +18,18 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "LNAccountModule/Classes/**/*",
+  "source_files": "LNAccountModule/Classes/**/*.{h,m}",
   "dependencies": {
     "LNModuleProtocol": [
-      "0.1.0"
+      "~>0.1.3"
     ],
     "LNModuleCore": [
-
+      "~>0.1.6"
+    ]
+  },
+  "resource_bundles": {
+    "LNAccountModule": [
+      "LNAccountModule/Classes/*.xib"
     ]
   }
 }

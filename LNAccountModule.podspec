@@ -30,12 +30,14 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LNAccountModule/Classes/**/*'
-  s.dependency 'LNModuleProtocol', '0.1.0'
-  s.dependency 'LNModuleCore'
-  # s.resource_bundles = {
-  #   'LNLogin' => ['LNLogin/Assets/*.png']
-  # }
+  s.source_files = 'LNAccountModule/Classes/**/*.{h,m}'
+#  s.resource = 'LNAccountModule/Classes/**/*.xib'
+  s.dependency 'LNModuleProtocol', '~>0.1.3'
+  s.dependency 'LNModuleCore', '~>0.1.6'
+
+  s.resource_bundles = {
+    'LNAccountModule' => ['LNAccountModule/Classes/**/*.xib']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

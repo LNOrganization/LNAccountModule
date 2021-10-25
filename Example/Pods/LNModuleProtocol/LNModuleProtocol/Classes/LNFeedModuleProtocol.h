@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LNModuleProtocol.h"
+#import "LNModuleBaseProtocol.h"
 
 
 @protocol LNFeedModuleProtocol <LNModuleBaseProtocol>
+
+- (UIViewController *)getMainFeedViewController;
 
 - (UIViewController *)getRecommendFeedViewController;
 

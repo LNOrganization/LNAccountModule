@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LNModuleProtocol.h"
+#import "LNModuleBaseProtocol.h"
 
 @protocol LNLiveModuleProtocol <LNModuleBaseProtocol>
 

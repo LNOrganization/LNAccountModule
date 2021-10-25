@@ -26,7 +26,7 @@
     self.manager = [LNModuleManager sharedInstance];
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didFinishLaunchingWithOptions:)]) {
             [modul application:application didFinishLaunchingWithOptions:launchOptions];
         }
@@ -38,7 +38,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationDidFinishLaunching:)]) {
             [modul applicationDidFinishLaunching:application];
         }
@@ -49,7 +49,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationDidBecomeActive:)]) {
             [modul applicationDidBecomeActive:application];
         }
@@ -60,7 +60,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationWillResignActive:)]) {
             [modul applicationWillResignActive:application];
         }
@@ -71,7 +71,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleOpenURL:)]) {
             [modul application:application handleOpenURL:url];
         }
@@ -86,7 +86,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:openURL:sourceApplication:annotation:)]) {
             [modul application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
         }
@@ -100,7 +100,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:openURL:sourceApplication:annotation:)]) {
             if (@available(iOS 9.0, *)) {
                [modul application:application openURL:url options:options];
@@ -117,7 +117,7 @@
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationDidReceiveMemoryWarning:)]) {
             [modul applicationDidReceiveMemoryWarning:application];
         }
@@ -127,7 +127,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application{
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationWillTerminate:)]) {
             [modul applicationWillTerminate:application];
         }
@@ -138,7 +138,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationSignificantTimeChange:)]) {
             [modul applicationSignificantTimeChange:application];
         }
@@ -149,7 +149,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:willChangeStatusBarOrientation:duration:)]) {
             [modul application:application willChangeStatusBarOrientation:newStatusBarOrientation duration:duration];
         }
@@ -160,7 +160,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didChangeStatusBarOrientation:)]) {
             [modul application:application didChangeStatusBarOrientation:oldStatusBarOrientation];
         }
@@ -171,7 +171,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:willChangeStatusBarFrame:)]) {
             [modul application:application willChangeStatusBarFrame:newStatusBarFrame];
         }
@@ -182,7 +182,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didChangeStatusBarFrame:)]) {
             [modul application:application didChangeStatusBarFrame:oldStatusBarFrame];
         }
@@ -193,7 +193,7 @@
      
      NSDictionary *moduls = [self.manager allImpInstanceInfos];
      [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-         id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+         id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
          if ([modul respondsToSelector:@selector(application:didRegisterUserNotificationSettings:)]) {
              [modul application:application didRegisterUserNotificationSettings:notificationSettings];
          }
@@ -204,7 +204,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didRegisterForRemoteNotificationsWithDeviceToken:)]) {
             [modul application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
         }
@@ -215,7 +215,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didFailToRegisterForRemoteNotificationsWithError:)]) {
             [modul application:application didFailToRegisterForRemoteNotificationsWithError:error];
         }
@@ -226,7 +226,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didReceiveRemoteNotification:)]) {
             [modul application:application didReceiveRemoteNotification:userInfo];
         }
@@ -237,7 +237,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didReceiveLocalNotification:)]) {
             [modul application:application didReceiveLocalNotification:notification];
         }
@@ -248,7 +248,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleActionWithIdentifier:forLocalNotification:completionHandler:)]) {
             [modul application:application handleActionWithIdentifier:identifier forLocalNotification:notification  completionHandler:completionHandler];
         }
@@ -259,7 +259,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler:)]) {
             if (@available(iOS 9.0, *)) {
                 [modul application:application handleActionWithIdentifier:identifier forRemoteNotification:userInfo withResponseInfo:responseInfo completionHandler:completionHandler];
@@ -274,7 +274,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleActionWithIdentifier:forRemoteNotification:completionHandler:)]) {
             [modul application:application handleActionWithIdentifier:identifier forRemoteNotification:userInfo completionHandler:completionHandler];
         }
@@ -285,7 +285,7 @@
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleActionWithIdentifier:forLocalNotification:withResponseInfo:completionHandler:)]) {
             if (@available(iOS 9.0, *)) {
                 [modul application:application handleActionWithIdentifier:identifier forLocalNotification:notification withResponseInfo:responseInfo completionHandler:completionHandler];
@@ -303,7 +303,7 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandl
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)]) {
             [modul application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
         }
@@ -315,7 +315,7 @@ performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))comp
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:performFetchWithCompletionHandler:)]) {
             [modul application:application performFetchWithCompletionHandler:completionHandler];
         }
@@ -328,7 +328,7 @@ performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:performActionForShortcutItem:completionHandler:)]) {
             if (@available(iOS 9.0, *)) {
                 [modul application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
@@ -345,7 +345,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleEventsForBackgroundURLSession:completionHandler:)]) {
             [modul application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
         }
@@ -356,7 +356,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleWatchKitExtensionRequest:reply:)]) {
             if (@available(iOS 8.2, *)) {
                 [modul application:application handleWatchKitExtensionRequest:userInfo reply:reply];
@@ -371,7 +371,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationShouldRequestHealthAuthorization:)]) {
             if (@available(iOS 9.0, *)) {
                 [modul applicationShouldRequestHealthAuthorization:application];
@@ -387,7 +387,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     id obj = nil;
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handlerForIntent:)]) {
             if (@available(iOS 14.0, *)) {
                 obj = [modul application:application handlerForIntent:intent];
@@ -405,7 +405,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(application:handleIntent:completionHandler:)]) {
             if (@available(iOS 11.0, *)) {
                 [modul application:application handleIntent:intent completionHandler:completionHandler];
@@ -420,7 +420,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationDidEnterBackground:)]) {
             [modul applicationDidEnterBackground:application];
         }
@@ -432,7 +432,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationWillEnterForeground:)]) {
             [modul applicationWillEnterForeground:application];
         }
@@ -444,7 +444,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationProtectedDataWillBecomeUnavailable:)]) {
             [modul applicationProtectedDataWillBecomeUnavailable:application];
         }
@@ -455,11 +455,19 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<LNModuleBaseProtocol> modul = (id<LNModuleBaseProtocol>)obj;
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationProtectedDataDidBecomeAvailable:)]) {
             [modul applicationProtectedDataDidBecomeAvailable:application];
         }
     }];
+}
+
+- (void)doInitialize {
+    
+}
+
+- (nonnull NSString *)version {
+    return nil;
 }
 
 @end

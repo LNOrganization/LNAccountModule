@@ -10,9 +10,10 @@
 #endif
 #endif
 
+#import "LNAccountModuleProtocol.h"
 #import "LNFeedModuleProtocol.h"
 #import "LNLiveModuleProtocol.h"
-#import "LNLoginModuleProtocol.h"
+#import "LNModuleBaseProtocol.h"
 #import "LNModuleProtocol.h"
 #import "LNVideoModuleProtocol.h"
 

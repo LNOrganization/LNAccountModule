@@ -6,8 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "LNModuleProtocol.h"
+#import "LNModuleBaseProtocol.h"
 
 @protocol LNVideoModuleProtocol <LNModuleBaseProtocol>
 
