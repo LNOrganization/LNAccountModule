@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LNAccountModule'
-  s.version          = '0.1.2'
+  s.version          = '0.1.6'
   s.summary          = '登录组件.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LNAccountModule/Classes/**/*.{h,m}'
 #  s.resource = 'LNAccountModule/Classes/**/*.xib'
-  s.dependency 'LNModuleProtocol', '~>0.1.3'
-  s.dependency 'LNModuleCore', '~>0.1.6'
-  s.dependency 'LNCommonKit', '~>0.1.2'
+  s.dependency 'LNModuleProtocol'
+  s.dependency 'LNModuleCore'
+  s.dependency 'LNCommonKit'
   s.resource_bundles = {
     'LNAccountModule' => ['LNAccountModule/Classes/**/*.xib']
   }
