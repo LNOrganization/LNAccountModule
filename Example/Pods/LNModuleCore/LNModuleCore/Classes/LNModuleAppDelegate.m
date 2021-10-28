@@ -67,31 +67,38 @@
     }];
 }
 
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
+- (void)applicationWillTerminate:(UIApplication *)application{
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
-        if ([modul respondsToSelector:@selector(application:handleOpenURL:)]) {
-            [modul application:application handleOpenURL:url];
+        if ([modul respondsToSelector:@selector(applicationWillTerminate:)]) {
+            [modul applicationWillTerminate:application];
         }
     }];
-    return YES;
 }
 
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(nullable NSString *)sourceApplication
-         annotation:(id)annotation
-{
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
     [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
-        if ([modul respondsToSelector:@selector(application:openURL:sourceApplication:annotation:)]) {
-            [modul application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        if ([modul respondsToSelector:@selector(applicationDidEnterBackground:)]) {
+            [modul applicationDidEnterBackground:application];
         }
     }];
-    return YES;
+
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    
+    NSDictionary *moduls = [self.manager allImpInstanceInfos];
+    [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
+        if ([modul respondsToSelector:@selector(applicationWillEnterForeground:)]) {
+            [modul applicationWillEnterForeground:application];
+        }
+    }];
+
 }
 
 - (BOOL)application:(UIApplication *)application
@@ -113,6 +120,35 @@
     return YES;
 }
 
+
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+//{
+//    NSDictionary *moduls = [self.manager allImpInstanceInfos];
+//    [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
+//        if ([modul respondsToSelector:@selector(application:handleOpenURL:)]) {
+//            [modul application:application handleOpenURL:url];
+//        }
+//    }];
+//    return YES;
+//}
+//
+//- (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(nullable NSString *)sourceApplication
+//         annotation:(id)annotation
+//{
+//    NSDictionary *moduls = [self.manager allImpInstanceInfos];
+//    [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
+//        if ([modul respondsToSelector:@selector(application:openURL:sourceApplication:annotation:)]) {
+//            [modul application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+//        }
+//    }];
+//    return YES;
+//}
+
+
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application;
 {
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
@@ -120,16 +156,6 @@
         id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
         if ([modul respondsToSelector:@selector(applicationDidReceiveMemoryWarning:)]) {
             [modul applicationDidReceiveMemoryWarning:application];
-        }
-    }];
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application{
-    NSDictionary *moduls = [self.manager allImpInstanceInfos];
-    [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
-        if ([modul respondsToSelector:@selector(applicationWillTerminate:)]) {
-            [modul applicationWillTerminate:application];
         }
     }];
 }
@@ -416,30 +442,6 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
     }];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    
-    NSDictionary *moduls = [self.manager allImpInstanceInfos];
-    [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
-        if ([modul respondsToSelector:@selector(applicationDidEnterBackground:)]) {
-            [modul applicationDidEnterBackground:application];
-        }
-    }];
-
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    
-    NSDictionary *moduls = [self.manager allImpInstanceInfos];
-    [moduls enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        id<UIApplicationDelegate> modul = (id<UIApplicationDelegate>)obj;
-        if ([modul respondsToSelector:@selector(applicationWillEnterForeground:)]) {
-            [modul applicationWillEnterForeground:application];
-        }
-    }];
-
-}
-
 - (void)applicationProtectedDataWillBecomeUnavailable:(UIApplication *)application {
     
     NSDictionary *moduls = [self.manager allImpInstanceInfos];
@@ -460,14 +462,6 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
             [modul applicationProtectedDataDidBecomeAvailable:application];
         }
     }];
-}
-
-- (void)doInitialize {
-    
-}
-
-- (nonnull NSString *)version {
-    return nil;
 }
 
 @end

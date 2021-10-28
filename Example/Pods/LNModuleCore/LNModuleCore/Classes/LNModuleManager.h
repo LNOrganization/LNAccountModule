@@ -28,6 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)impInstanceForProtocol:(Protocol *)protocol;
 
 /**
+ * 根据协议删除组件对象
+ *
+ * @param protocol 模块通信协议
+ */
+- (void)removeInstanceForProtocol:(Protocol *)protocol;
+
+/**
  * 获取所有模块实现对象和协议的映射表
  *
  * @return 实现对象和协议的映射表

@@ -133,7 +133,7 @@ static inline id ln_safe_op_dic_read(dispatch_queue_t queue, id (^block)(void)){
     return keys;
 }
 
-- (NSString *)description
+- (NSString *)safe_description
 {
     NSString *description = ln_safe_op_dic_read(self.operationQueue, ^id{
         return [self description];
@@ -198,6 +198,70 @@ static inline id ln_safe_op_dic_read(dispatch_queue_t queue, id (^block)(void)){
         [self setDictionary:otherDictionary];
     });
 }
+
+- (NSDictionary *)safe_copy
+{
+    return ln_safe_op_dic_read(self.operationQueue, ^id{
+        return [self copy];
+    });
+}
+
+- (void)safe_enumerateKeysAndObjectsUsingBlock:(void (NS_NOESCAPE ^)(id<NSCopying>key, id obj, BOOL *stop))block
+{
+    if (!block) {
+        return;
+    }
+    ln_safe_op_dic_write(self.operationQueue, ^{
+        [self enumerateKeysAndObjectsUsingBlock:block];
+    });
+}
+
+
+- (void)safe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts
+                                     usingBlock:(void (NS_NOESCAPE ^)(id<NSCopying> key, id obj, BOOL *stop))block
+{
+    if (!block) {
+        return;
+    }
+    ln_safe_op_dic_write(self.operationQueue, ^{
+        [self enumerateKeysAndObjectsWithOptions:opts usingBlock:block];
+    });
+}
+
+- (NSArray *)safe_keysSortedByValueUsingComparator:(NSComparator NS_NOESCAPE)cmptr
+{
+    if (!cmptr) {
+        return nil;
+    }
+    return ln_safe_op_dic_read(self.operationQueue, ^id{
+        return [self keysSortedByValueUsingComparator:cmptr];
+    });
+}
+
+- (NSArray *)safe_keysSortedByValueWithOptions:(NSSortOptions)opts
+                                        usingComparator:(NSComparator NS_NOESCAPE)cmptr
+{
+    if (!cmptr) {
+        return nil;
+    }
+    return ln_safe_op_dic_read(self.operationQueue, ^id{
+        return [self keysSortedByValueWithOptions:opts usingComparator:cmptr];
+    });
+}
+
+
+- (NSArray *)safe_keysSortedByValueUsingSelector:(SEL)comparator
+{
+    if (!comparator) {
+        return nil;
+    }
+    return ln_safe_op_dic_read(self.operationQueue, ^id{
+        return [self keysSortedByValueUsingSelector:comparator];
+    });
+}
+
+
+
 //
 
 //static dispatch_semaphore_t ln_lock_semaphore = nil;

@@ -5,8 +5,7 @@
 //  Created by Lenny on 2021/10/17.
 //
 
-#import <UIKit/UIKit.h>
-#import "LNModuleBaseProtocol.h"
+#import "LNProtocolConifg.h"
 
 
 @protocol LNFeedModuleProtocol <LNModuleBaseProtocol>

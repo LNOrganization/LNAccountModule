@@ -13,7 +13,7 @@ extern NSString * const LNAccountLoginSucceedNotification;
 extern NSString * const LNAccountLogoutFinishNotification;
 
 typedef void(^LNLoginCompletion)(NSDictionary *accountInfo, NSString * errMsg);
-typedef void(^LNLogotCompletion)();
+typedef void(^LNLogotCompletion)(void);
 
 @protocol LNAccountModuleProtocol <LNModuleBaseProtocol>
 

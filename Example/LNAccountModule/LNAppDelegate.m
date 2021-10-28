@@ -16,8 +16,8 @@
 {
     
     id <LNAccountModuleProtocol> accountModule = [[LNModuleManager sharedInstance] impInstanceForProtocol:@protocol(LNAccountModuleProtocol)];
-    [accountModule registerLogoutCompletionNotify:^(NSDictionary *accountInfo, NSString *errMsg) {
-        NSLog(@"%@", accountInfo);
+    [accountModule registerLogoutCompletionNotify:^(void) {
+        NSLog(@"log out");
     } forKey:@"kLNAppDelegateLogout"];
     [accountModule logout];
     [accountModule registerLoginCompletionNotify:^(NSDictionary *accountInfo, NSString *errMsg) {

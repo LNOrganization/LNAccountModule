@@ -39,6 +39,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)safe_exchangeObjectAtIndex:(NSUInteger)idx1 withObjectAtIndex:(NSUInteger)idx2;
 
+- (NSArray *)safe_copy;
+
+
+- (void)safe_enumerateObjectsUsingBlock:(void (NS_NOESCAPE ^)(id obj, NSUInteger idx, BOOL *stop))block;
+
+- (void)safe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts
+                              usingBlock:(void (NS_NOESCAPE ^)(id obj, NSUInteger idx, BOOL *stop))block;
+
+
+- (NSArray *)safe_sortedArrayUsingComparator:(NSComparator NS_NOESCAPE)cmptr;
+
+- (NSArray *)safe_sortedArrayWithOptions:(NSSortOptions)opts
+                         usingComparator:(NSComparator NS_NOESCAPE)cmptr;
+
+- (NSArray *)safe_sortedArrayUsingSelector:(SEL)comparator;
+
+- (void)safe_sortUsingSelector:(SEL)comparator;
+
+- (void)safe_sortUsingComparator:(NSComparator NS_NOESCAPE)cmptr;
+
+- (void)safe_sortWithOptions:(NSSortOptions)opts
+             usingComparator:(NSComparator NS_NOESCAPE)cmptr;
 
 @end
 

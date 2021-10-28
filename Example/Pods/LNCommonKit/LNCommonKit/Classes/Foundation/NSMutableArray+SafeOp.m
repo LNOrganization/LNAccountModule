@@ -9,8 +9,8 @@
 #import <objc/runtime.h>
 #import <pthread/pthread.h>
 
-static void *kSafeMutableArrayQueueSpecific = &kSafeMutableArrayQueueSpecific;
-static void *kSafeMutableArrayQueueKey = &kSafeMutableArrayQueueKey;
+static void *kLNSafeMutableArrayQueueSpecific = &kLNSafeMutableArrayQueueSpecific;
+static void *kLNSafeMutableArrayQueueKey = &kLNSafeMutableArrayQueueKey;
 
 
 static inline void ln_safe_op_arr_write(dispatch_queue_t queue, void (^block)(void)){
@@ -48,7 +48,7 @@ static inline id ln_safe_op_arr_read(dispatch_queue_t queue, id (^block)(void)){
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         queue = dispatch_queue_create("com.djx.GCDDemo.NSMutableArray", DISPATCH_QUEUE_CONCURRENT);
-        dispatch_queue_set_specific(queue, kSafeMutableArrayQueueSpecific, kSafeMutableArrayQueueSpecific, NULL);
+        dispatch_queue_set_specific(queue, kLNSafeMutableArrayQueueSpecific, kLNSafeMutableArrayQueueSpecific, NULL);
     });
      return queue;
 }
@@ -131,10 +131,11 @@ static inline id ln_safe_op_arr_read(dispatch_queue_t queue, id (^block)(void)){
 
 - (void)safe_removeObject:(id)anObject
 {
+    if (!anObject) {
+        return;
+    }
     ln_safe_op_arr_write(self.operationQueue, ^{
-        if (anObject) {
-            [self removeObject:anObject];
-        }
+        [self removeObject:anObject];
     });
 }
 
@@ -148,8 +149,11 @@ static inline id ln_safe_op_arr_read(dispatch_queue_t queue, id (^block)(void)){
 
 - (void)safe_replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject
 {
+    if (!anObject) {
+        return;
+    }
     ln_safe_op_arr_write(self.operationQueue, ^{
-        if (anObject && index < self.count) {
+        if (index < self.count) {
             [self replaceObjectAtIndex:index withObject:anObject];
         }
     });
@@ -157,10 +161,11 @@ static inline id ln_safe_op_arr_read(dispatch_queue_t queue, id (^block)(void)){
 
 - (void)safe_addObjectsFromArray:(NSArray<id> *)otherArray
 {
+    if (!otherArray || ![otherArray isKindOfClass:[NSArray class]]) {
+        return;
+    }
     ln_safe_op_arr_write(self.operationQueue, ^{
-        if (otherArray && [otherArray isKindOfClass:[NSArray class]]) {
-            [self addObjectsFromArray:otherArray];
-        }
+        [self addObjectsFromArray:otherArray];
     });
 }
 
@@ -176,11 +181,96 @@ static inline id ln_safe_op_arr_read(dispatch_queue_t queue, id (^block)(void)){
 
 - (void)safe_removeObject:(id)anObject inRange:(NSRange)range
 {
+    if (!anObject) {
+        return;
+    }
     ln_safe_op_arr_write(self.operationQueue, ^{
-        if (anObject && (range.length + range.location < self.count)) {
+        if (range.length + range.location < self.count) {
             [self removeObject:anObject inRange:range];
         }
     });
 }
 
+- (NSArray *)safe_copy
+{
+    return ln_safe_op_arr_read(self.operationQueue, ^id{
+        return [self copy];
+    });
+}
+
+- (void)safe_enumerateObjectsUsingBlock:(void (NS_NOESCAPE ^)(id obj, NSUInteger idx, BOOL *stop))block
+{
+    if (!block) {
+        return;
+    }
+    ln_safe_op_arr_write(self.operationQueue, ^{
+        [self enumerateObjectsUsingBlock:block];
+    });
+}
+
+- (void)safe_enumerateObjectsWithOptions:(NSEnumerationOptions)opts
+                              usingBlock:(void (NS_NOESCAPE ^)(id obj, NSUInteger idx, BOOL *stop))block
+{
+    if (!block) {
+        return;
+    }
+    ln_safe_op_arr_write(self.operationQueue, ^{
+        [self enumerateObjectsWithOptions:opts usingBlock:block];
+    });
+}
+
+
+- (NSArray *)safe_sortedArrayUsingComparator:(NSComparator NS_NOESCAPE)cmptr
+{
+    if (!cmptr) {
+        return nil;
+    }
+    return ln_safe_op_arr_read(self.operationQueue, ^{
+        return [self sortedArrayUsingComparator:cmptr];
+    });
+}
+
+- (NSArray *)safe_sortedArrayWithOptions:(NSSortOptions)opts
+                         usingComparator:(NSComparator NS_NOESCAPE)cmptr
+{
+    if (!cmptr) {
+        return nil;
+    }
+    return ln_safe_op_arr_read(self.operationQueue, ^id{
+        return [self sortedArrayWithOptions:opts usingComparator:cmptr];
+    });
+}
+
+- (NSArray *)safe_sortedArrayUsingSelector:(SEL)comparator
+{
+    if(!comparator) return nil;
+    return ln_safe_op_arr_read(self.operationQueue, ^{
+        return [self sortedArrayUsingSelector:comparator];
+    });
+}
+
+- (void)safe_sortUsingSelector:(SEL)comparator
+{
+    if(!comparator) return;
+    ln_safe_op_arr_write(self.operationQueue, ^{
+        [self sortUsingSelector:comparator];
+    });
+}
+
+- (void)safe_sortUsingComparator:(NSComparator NS_NOESCAPE)cmptr
+{
+    if(!cmptr) return;
+    ln_safe_op_arr_write(self.operationQueue, ^{
+        [self sortUsingComparator:cmptr];
+    });
+}
+
+- (void)safe_sortWithOptions:(NSSortOptions)opts
+             usingComparator:(NSComparator NS_NOESCAPE)cmptr
+{
+    if(!cmptr) return;
+    ln_safe_op_arr_write(self.operationQueue, ^{
+        [self sortWithOptions:opts usingComparator:cmptr];
+    });
+}
 @end

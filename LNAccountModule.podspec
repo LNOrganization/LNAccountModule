@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LNAccountModule'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '登录组件.'
 
 # This description is used to generate tags and improve search results.
@@ -31,13 +31,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LNAccountModule/Classes/**/*.{h,m}'
-#  s.resource = 'LNAccountModule/Classes/**/*.xib'
   s.dependency 'LNModuleProtocol'
-  s.dependency 'LNModuleCore'
   s.dependency 'LNCommonKit'
   s.resource_bundles = {
     'LNAccountModule' => ['LNAccountModule/Classes/**/*.xib']
   }
+  #  s.resource = 'LNAccountModule/Classes/**/*.xib'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

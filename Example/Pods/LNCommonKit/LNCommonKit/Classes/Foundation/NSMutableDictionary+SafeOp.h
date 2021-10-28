@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray <NSString *>*)safe_allValues;
 
-- (NSString *)description;
+- (NSString *)safe_description;
 
 - (void)safe_removeObjectForKey:(NSString *)key;
 
@@ -36,6 +36,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)safe_setDictionary:(NSDictionary<NSString *, id> *)otherDictionary;
 
 
+- (void)safe_enumerateKeysAndObjectsUsingBlock:(void (NS_NOESCAPE ^)(id<NSCopying>key, id obj, BOOL *stop))block;
+
+- (void)safe_enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts
+                                     usingBlock:(void (NS_NOESCAPE ^)(id<NSCopying> key, id obj, BOOL *stop))block;
+
+- (NSArray *)safe_keysSortedByValueUsingComparator:(NSComparator NS_NOESCAPE)cmptr;
+
+- (NSArray *)safe_keysSortedByValueWithOptions:(NSSortOptions)opts
+                               usingComparator:(NSComparator NS_NOESCAPE)cmptr;
+
+- (NSArray *)safe_keysSortedByValueUsingSelector:(SEL)comparator;
 
 @end
 

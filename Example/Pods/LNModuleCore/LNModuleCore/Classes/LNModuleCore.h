@@ -7,3 +7,4 @@
 
 #import <LNModuleCore/LNModuleManager.h>
 #import <LNModuleCore/LNModuleAppDelegate.h>
+#import <LNModuleCore/LNModuleBaseProtocol.h>
