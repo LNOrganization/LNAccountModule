@@ -16,8 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIViewController *)currentViewController;
 
-+ (void)pushToViewControll:(UIViewController *)viewController;
++ (void)pushViewController:(UIViewController *)viewController;
 
++ (void)pushViewController:(UIViewController *)viewController
+                  animated:(BOOL)animated;
+
++ (void)presentFromViewController:(UIViewController *)fromViewController
+                 toViewController:(UIViewController *)toViewController;
+
++ (void)presentFromViewController:(UIViewController *)fromViewController
+                 toViewController:(UIViewController *)toViewController
+                         animated: (BOOL)animated
+                       completion:(void (^ __nullable)(void))completion;
 
 @end
 

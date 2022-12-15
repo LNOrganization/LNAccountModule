@@ -5,8 +5,7 @@
 //  Created by Lenny on 2021/10/17.
 //
 
-#import "LNProtocolConifg.h"
-
+#import "LNProtocolConfig.h"
 
 @protocol LNFeedModuleProtocol <LNModuleBaseProtocol>
 

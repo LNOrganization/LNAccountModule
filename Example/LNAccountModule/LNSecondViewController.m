@@ -7,7 +7,7 @@
 //
 
 #import "LNSecondViewController.h"
-
+#import "LNTestManager.h"
 @interface LNSecondViewController ()
 
 @end
@@ -16,7 +16,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [LNTestManager registerLoginCompletionNotify:^(BOOL isLogin, id  _Nonnull object) {
+//        NSLog(@"%@", self);
+//    }];
+    __weak typeof(self) weakSelf = self;
+    [LNTestManager registerLoginNotify:^(BOOL isLogin, id  _Nonnull object) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        NSLog(@"%@-5", strongSelf);
+    } observer:self];
+    
+    [LNTestManager registerLoginNotify:^(BOOL isLogin, id  _Nonnull object) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        NSLog(@"%@-6", strongSelf);
+    } observer:self];
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+}
+
+- (void)dealloc
+{
+    NSLog(@"LNSecondViewController dealloc");
 }
 
 /*

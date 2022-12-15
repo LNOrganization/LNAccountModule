@@ -5,34 +5,26 @@
 //  Created by Lenny on 2021/10/17.
 //
 
-#import <Foundation/Foundation.h>
-#import "LNModuleProtocol.h"
+#import "LNProtocolConfig.h"
 
 
-extern NSString * const LNAccountLoginSucceedNotification;
-extern NSString * const LNAccountLogoutFinishNotification;
+extern NSString * const LNAccountLoginNotification;
+extern NSString * const LNAccountLogoutNotification;
 
-typedef void(^LNLoginCompletion)(NSDictionary *accountInfo, NSString * errMsg);
-typedef void(^LNLogotCompletion)(void);
+typedef void(^LNLoginBlock)(NSDictionary *userInfo, NSError * error);
+typedef void(^LNLogoutBlock)(void);
 
 @protocol LNAccountModuleProtocol <LNModuleBaseProtocol>
 
 - (BOOL)isLogin;
 
-- (BOOL)loginIfNeed:(LNLoginCompletion)completion;
+- (BOOL)loginIfNeed:(LNLoginBlock)completion;
 
 - (void)logout;
 
-- (void)getAccountInfo:(LNLoginCompletion)completion;
+- (NSDictionary *)getLoginUserInfo;
 
-
-- (void)registerLoginCompletionNotify:(LNLoginCompletion)completion
-                               forKey:(NSString *)key;
-- (void)removeLoginNotificationForKey:(NSString *)key;
-
-
-- (void)registerLogoutCompletionNotify:(LNLogotCompletion)completion
-                                forKey:(NSString *)key;
-- (void)removeLogoutNotificationForKey:(NSString *)key;
+- (void)addObserver:(id)observer forLoginBlock:(LNLoginBlock)block;
+- (void)addObserver:(id)observer forLogoutBlock:(LNLogoutBlock)block;
 
 @end

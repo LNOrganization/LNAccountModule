@@ -6,17 +6,19 @@
 //
 
 
-#import "LNProtocolConifg.h"
+#import "LNProtocolConfig.h"
 
 @protocol LNLiveModuleProtocol <LNModuleBaseProtocol>
 
-- (UIViewController *)getLiveFocusListViewController;
+- (UIViewController *)getRecommendListViewController;
 
-- (UIViewController *)getLiveTimeLineListViewController;
+- (UIViewController *)getFocusListViewController;
 
-- (UIViewController *)getLiveRoomViewController;
+- (UIViewController *)getTimeLineListViewController;
 
-- (UIViewController *)getLiveAnchorViewController;
+- (UIViewController *)getLiveRoomViewControllerWithRoomId:(NSString *)roomId;
+
+- (UIViewController *)getLiveAnchorViewControllerWithUserId:(NSString *)userId;
 
 @end
 

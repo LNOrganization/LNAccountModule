@@ -9,20 +9,36 @@
 #import "LNAppDelegate.h"
 #import <LNModuleCore/LNModuleCore.h>
 #import <LNModuleProtocol/LNAccountModuleProtocol.h>
-
+#import "LNViewController.h"
+#import "LNTestManager.h"
 @implementation LNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
+    LNViewController *vc = [[LNViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navi;
+    
     id <LNAccountModuleProtocol> accountModule = [[LNModuleManager sharedInstance] impInstanceForProtocol:@protocol(LNAccountModuleProtocol)];
-    [accountModule registerLogoutCompletionNotify:^(void) {
-        NSLog(@"log out");
-    } forKey:@"kLNAppDelegateLogout"];
+    [accountModule addObserver:self forLoginBlock:^(NSDictionary *userInfo, NSError *errMsg) {
+        NSLog(@"login");
+    }];
+    
     [accountModule logout];
-    [accountModule registerLoginCompletionNotify:^(NSDictionary *accountInfo, NSString *errMsg) {
-        NSLog(@"%@", accountInfo);
-    } forKey:@"kLNAppDelegateLogin"];
+    
+    [accountModule addObserver:self forLogoutBlock:^{
+        NSLog(@"logout");
+    }];
+    
+
+    [LNTestManager registerLoginNotify:^(BOOL isLogin, id  _Nonnull object) {
+        NSLog(@"1");
+    } observer:self];
+    [LNTestManager registerLoginNotify:^(BOOL isLogin, id  _Nonnull object) {
+        NSLog(@"2");
+    } observer:self];
     
     // Override point for customization after application launch.
     return YES;

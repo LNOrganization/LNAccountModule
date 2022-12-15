@@ -1,20 +1,119 @@
 PODS:
-  - LNAccountModule (0.1.6):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - CocoaAsyncSocket (7.6.5)
+  - JSONModel (1.8.0)
+  - LNAccountModule (0.1.7):
     - LNCommonKit
     - LNModuleProtocol
-  - LNCommonKit (0.1.3):
-    - LNCommonKit/Foundation (= 0.1.3)
-    - LNCommonKit/Router (= 0.1.3)
-  - LNCommonKit/Foundation (0.1.3)
-  - LNCommonKit/Router (0.1.3)
-  - LNModuleCore (0.1.7)
-  - LNModuleProtocol (0.1.4):
+  - LNCommonKit (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - LNCommonKit/BaseMVC (= 0.1.8)
+    - LNCommonKit/Consttant (= 0.1.8)
+    - LNCommonKit/CustomUIKit (= 0.1.8)
+    - LNCommonKit/Foundation (= 0.1.8)
+    - LNCommonKit/Log (= 0.1.8)
+    - LNCommonKit/Network (= 0.1.8)
+    - LNCommonKit/Router (= 0.1.8)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/BaseMVC (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - LNCommonKit/CustomUIKit
+    - LNCommonKit/Network
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Consttant (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/CustomUIKit (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Foundation (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Log (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Network (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Router (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNModuleCore (0.1.9)
+  - LNModuleProtocol (0.1.5):
     - LNModuleCore
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.2)
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
 
 DEPENDENCIES:
   - LNAccountModule (from `../`)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Aspects
+    - CocoaAsyncSocket
+    - JSONModel
+    - Masonry
+    - MJRefresh
+    - SDWebImage
   https://github.com/NoNameOrganazation/LNSpec.git:
     - LNCommonKit
     - LNModuleCore
@@ -25,11 +124,18 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LNAccountModule: 26616590e096dc6f8ec0626f803e19748e3fd493
-  LNCommonKit: 20270d5514cdd1fbda044d1d4ea5b4faf41b0e59
-  LNModuleCore: 91e1c96283b76b4e2b30ba74d0f9726b1fb1f6b7
-  LNModuleProtocol: 98ba25efcd948d5fd5c657a32416c738946d02ba
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  LNAccountModule: 47bae2ca98b93a28e2b3a12d382407e799be3a04
+  LNCommonKit: 348c5dc55afedde4a509e1831d433bc2d3f0dccd
+  LNModuleCore: d37faf840963a9ccc7e6830331e1f340d86ac866
+  LNModuleProtocol: 40ae683fedbbeccf8294c064d294f98dae54a99b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
 
-PODFILE CHECKSUM: cd30a22a17140a775b66f3856d5a57a21faa197f
+PODFILE CHECKSUM: 9fe0f4a2a26f15aa9a3a47694ab264a4ed9d094a
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

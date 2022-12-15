@@ -12,13 +12,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Router)
 
-- (UIViewController *)topViewController:(UIViewController *)vc;
+- (UIViewController *)ln_topViewController:(UIViewController *)vc;
 
-- (UIViewController *)currentViewController;
+- (UIViewController *)ln_currentViewController;
 
-- (void)pushToViewControll:(UIViewController *)viewController;
+- (void)ln_pushViewController:(UIViewController *)viewController;
 
+- (void)ln_pushViewController:(UIViewController *)viewController
+                     animated: (BOOL)animated;
 
+- (void)ln_presentViewController:(UIViewController *)viewController;
+
+- (void)ln_presentViewController:(UIViewController *)viewController
+                         animated: (BOOL)animated
+                       completion:(void (^ __nullable)(void))completion;
 @end
 
 NS_ASSUME_NONNULL_END

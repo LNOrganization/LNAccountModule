@@ -43,13 +43,37 @@
     return vc;
 }
 
-+ (void)pushToViewControll:(UIViewController *)viewController
++ (void)pushViewController:(UIViewController *)viewController
 {
-    UIViewController *currentViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [self pushViewController:viewController animated:YES];
+}
+
++ (void)pushViewController:(UIViewController *)viewController
+                  animated:(BOOL)animated
+{
+    UIViewController *currentViewController = [self currentViewController];
     if (currentViewController.navigationController) {
-        [currentViewController.navigationController pushViewController:viewController animated:YES];
-    }else{
-        [currentViewController presentViewController:viewController animated:YES completion:nil];
+        [currentViewController.navigationController pushViewController:viewController animated:animated];
+    }
+}
+
++ (void)presentFromViewController:(UIViewController *)fromViewController
+                 toViewController:(UIViewController *)toViewController
+{
+    [self presentFromViewController:fromViewController
+                   toViewController:toViewController
+                           animated:YES
+                         completion:nil];
+}
+
++ (void)presentFromViewController:(UIViewController *)fromViewController
+                 toViewController:(UIViewController *)toViewController
+                         animated: (BOOL)flag
+                       completion:(void (^ __nullable)(void))completion
+{
+    UIViewController *currentViewController = [self topViewController:fromViewController];
+    if (currentViewController.navigationController) {
+        [currentViewController presentViewController:toViewController animated:YES completion:completion];
     }
 }
 

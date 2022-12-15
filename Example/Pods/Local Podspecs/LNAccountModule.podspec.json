@@ -1,6 +1,6 @@
 {
   "name": "LNAccountModule",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "summary": "登录组件.",
   "description": "实现业务登录、注册的组件",
   "homepage": "https://github.com/NoNameOrganazation",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/NoNameOrganazation/LNAccountModule.git",
-    "tag": "0.1.6"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "9.0"

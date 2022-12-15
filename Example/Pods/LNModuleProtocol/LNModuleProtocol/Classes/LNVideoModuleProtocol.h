@@ -5,13 +5,14 @@
 //  Created by Lenny on 2021/10/17.
 //
 
-#import <Foundation/Foundation.h>
-#import "LNProtocolConifg.h"
+#import "LNProtocolConfig.h"
 
 @protocol LNVideoModuleProtocol <LNModuleBaseProtocol>
 
-- (UIViewController *)getRecommendVideoViewController;
+- (UIViewController *)getPayerViewControllerWithUrlStr:(NSString *)urlStr;
 
-- (UIViewController *)getTimeLineVideoViewController;
+- (UIViewController *)getRecommendTableViewController;
+
+- (UIViewController *)getFocusTableViewController;
 
 @end

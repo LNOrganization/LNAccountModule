@@ -24,6 +24,11 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B84ECE08294AD20E00FB57CA /* pod_release.sh in Resources */ = {isa = PBXBuildFile; fileRef = B84ECE05294AD20E00FB57CA /* pod_release.sh */; };
+		B84ECE09294AD20E00FB57CA /* pod_local_check.sh in Resources */ = {isa = PBXBuildFile; fileRef = B84ECE06294AD20E00FB57CA /* pod_local_check.sh */; };
+		B84ECE0A294AD20E00FB57CA /* pod_remote_check.sh in Resources */ = {isa = PBXBuildFile; fileRef = B84ECE07294AD20E00FB57CA /* pod_remote_check.sh */; };
+		B8D62321293D0587005ACF6A /* LNTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D62320293D0587005ACF6A /* LNTestManager.m */; };
+		B8D62324293D0B9B005ACF6A /* LNSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D62323293D0B9B005ACF6A /* LNSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,13 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A8A9878FF89CDF1E96AF05B /* Pods-LNAccountModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAccountModule_Example.release.xcconfig"; path = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A930F3B0C5F5915785DA0D71 /* Pods-LNAccountModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAccountModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B84ECE05294AD20E00FB57CA /* pod_release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pod_release.sh; sourceTree = "<group>"; };
+		B84ECE06294AD20E00FB57CA /* pod_local_check.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pod_local_check.sh; sourceTree = "<group>"; };
+		B84ECE07294AD20E00FB57CA /* pod_remote_check.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pod_remote_check.sh; sourceTree = "<group>"; };
+		B8D6231F293D0587005ACF6A /* LNTestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNTestManager.h; sourceTree = "<group>"; };
+		B8D62320293D0587005ACF6A /* LNTestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNTestManager.m; sourceTree = "<group>"; };
+		B8D62322293D0B9B005ACF6A /* LNSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNSecondViewController.h; sourceTree = "<group>"; };
+		B8D62323293D0B9B005ACF6A /* LNSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNSecondViewController.m; sourceTree = "<group>"; };
 		C5717D7C37C656C38999D217 /* Pods-LNAccountModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNAccountModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LNAccountModule_Tests/Pods-LNAccountModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7BB21953FAEA1EF52BA7026 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E262AF1978E04B49E3C119EA /* Pods_LNAccountModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNAccountModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +121,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				B84ECE04294AD20E00FB57CA /* pod_script */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LNAccountModule */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -151,6 +164,10 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				B8D6231F293D0587005ACF6A /* LNTestManager.h */,
+				B8D62320293D0587005ACF6A /* LNTestManager.m */,
+				B8D62322293D0B9B005ACF6A /* LNSecondViewController.h */,
+				B8D62323293D0B9B005ACF6A /* LNSecondViewController.m */,
 			);
 			name = "Example for LNAccountModule";
 			path = LNAccountModule;
@@ -194,6 +211,17 @@
 				C7BB21953FAEA1EF52BA7026 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B84ECE04294AD20E00FB57CA /* pod_script */ = {
+			isa = PBXGroup;
+			children = (
+				B84ECE05294AD20E00FB57CA /* pod_release.sh */,
+				B84ECE06294AD20E00FB57CA /* pod_local_check.sh */,
+				B84ECE07294AD20E00FB57CA /* pod_remote_check.sh */,
+			);
+			name = pod_script;
+			path = ../pod_script;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84ECE08294AD20E00FB57CA /* pod_release.sh in Resources */,
+				B84ECE09294AD20E00FB57CA /* pod_local_check.sh in Resources */,
+				B84ECE0A294AD20E00FB57CA /* pod_remote_check.sh in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -302,17 +333,31 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LNAccountModule_Example/Pods-LNAccountModule_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/LNAccountModule/LNAccountModule.framework",
 				"${BUILT_PRODUCTS_DIR}/LNCommonKit/LNCommonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/LNModuleCore/LNModuleCore.framework",
 				"${BUILT_PRODUCTS_DIR}/LNModuleProtocol/LNModuleProtocol.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNAccountModule.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNCommonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNModuleCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNModuleProtocol.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,6 +418,8 @@
 				6003F59E195388D20070C39A /* LNAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LNViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				B8D62321293D0587005ACF6A /* LNTestManager.m in Sources */,
+				B8D62324293D0B9B005ACF6A /* LNSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
