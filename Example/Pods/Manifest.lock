@@ -17,7 +17,7 @@ PODS:
   - Aspects (1.4.1)
   - CocoaAsyncSocket (7.6.5)
   - JSONModel (1.8.0)
-  - LNAccountModule (0.1.7):
+  - LNAccountModule (0.1.8):
     - LNCommonKit
     - LNModuleProtocol
   - LNCommonKit (0.1.8):
@@ -128,7 +128,7 @@ SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
-  LNAccountModule: 47bae2ca98b93a28e2b3a12d382407e799be3a04
+  LNAccountModule: 9ef9d033b45850539b9f05b62880c5ee609a5397
   LNCommonKit: 348c5dc55afedde4a509e1831d433bc2d3f0dccd
   LNModuleCore: d37faf840963a9ccc7e6830331e1f340d86ac866
   LNModuleProtocol: 40ae683fedbbeccf8294c064d294f98dae54a99b

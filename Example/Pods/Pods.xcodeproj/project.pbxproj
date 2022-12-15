@@ -190,7 +190,7 @@
 		6E4DA502D1CFFFD3E5AF5CDC1144AAEE /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C023438D352B43FEFCA6D39B9C28F /* SDWebImageDownloaderOperation.m */; };
 		6F4C91DFF7994C8FF102BB9DA168991F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13AABFB143720F977C9D07751BEF1F /* UIView+MJExtension.m */; };
 		6FF2EF199353DB0DDFA8E2666E6ED778 /* LNBaseMVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 325C98FF626314363CF375EA476B5FF3 /* LNBaseMVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		703B141D6715D193ADC48CDC7ACBABF6 /* LNAccountModule-LNAccountModule in Resources */ = {isa = PBXBuildFile; fileRef = 169F6CE403071B0C021D613A52088E16 /* LNAccountModule-LNAccountModule */; };
+		703B141D6715D193ADC48CDC7ACBABF6 /* LNAccountModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */; };
 		7106210A9211EF81893018BFBF0A4CE4 /* LNSafeMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D6BFD7C0AB7AC49C3DE52B90D21CF /* LNSafeMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7201C9E37D61387BE0C0A18F49DF8BD7 /* LNHTTPCustomClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 25234A2EA0B8F355BF8200EDF3252FD5 /* LNHTTPCustomClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72CAD26DC86BDDD5AE05CA3C4D9A0C8C /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E232FEB84557CC7675D8751842C8 /* JSONValueTransformer.m */; };
@@ -623,7 +623,7 @@
 		15E703609A89CC3A23B638B21C06D000 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		1655DA22FBB363B361622CD437E25C6E /* SDImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageFrame.h; path = SDWebImage/Core/SDImageFrame.h; sourceTree = "<group>"; };
 		166B0F86422CE1F8CAAB55F65E8BA930 /* LNSafeMutableArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNSafeMutableArray.m; path = LNCommonKit/Classes/Foundation/LNSafeMutableArray.m; sourceTree = "<group>"; };
-		169F6CE403071B0C021D613A52088E16 /* LNAccountModule-LNAccountModule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "LNAccountModule-LNAccountModule"; path = LNAccountModule.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LNAccountModule.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1714FD5BCB143B6B5405BDB21CCA5E7E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		17A9D6C82FB4C017705240A6D68B1630 /* ResourceBundle-LNAccountModule-LNAccountModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LNAccountModule-LNAccountModule-Info.plist"; sourceTree = "<group>"; };
 		17C763FDB8A28C42666E026E28C10843 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
@@ -794,7 +794,7 @@
 		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD7EB1C2E7BEAAC3D23D4B6F5EC2559 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		6D4F734A1325C5DD31C4BB5180160FBB /* LNModuleProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNModuleProtocol.release.xcconfig; sourceTree = "<group>"; };
-		6D64EB8EB62020129BF11BA5FAF9ACBE /* LNAccountModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LNAccountModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6D64EB8EB62020129BF11BA5FAF9ACBE /* LNAccountModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LNAccountModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6D9F31298CF9311C0998B071667FA486 /* Aspects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Aspects.modulemap; sourceTree = "<group>"; };
 		6DA41AE1B56A288451E0F5B965B994D7 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		6DEA0D3AFD9A46D95632AC8D44951F05 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -821,7 +821,7 @@
 		7A48D89AC6F96AFD376A5BC63F05BC67 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		7A5E5C7862503D4B40E5C277765A3D6B /* SDWebImageTransitionInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransitionInternal.h; path = SDWebImage/Private/SDWebImageTransitionInternal.h; sourceTree = "<group>"; };
 		7B2DE53BD77C2BAE61FFD7EA40E5089D /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
-		7B49A2031DBD04D003F503A4AFAA20C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7B49A2031DBD04D003F503A4AFAA20C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7C33CC737E50F9C2300A3C8C51D74715 /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		7C4EA5644CDD6A14F61EEAD2E1A0C6CF /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
 		7D3CAA8C395ABDF8916953A299388E4E /* WKWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+AFNetworking.h"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -881,7 +881,7 @@
 		9CE999499A463F5C01D41479AF983075 /* SDWebImageDownloaderResponseModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderResponseModifier.h; path = SDWebImage/Core/SDWebImageDownloaderResponseModifier.h; sourceTree = "<group>"; };
 		9D46D5BA259DA02502CEA6BB6EFF91F7 /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/Core/SDImageCoder.h; sourceTree = "<group>"; };
 		9D5AEC6D4CFAEA683701C31E1C315CFC /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DAA1F186CD884C35C0C7B5813912E66 /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/Core/SDImageGIFCoder.h; sourceTree = "<group>"; };
 		9E07037C8D6360FF67020A2F34938C91 /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
 		9E07C6BFA6BB8B339566BF4855DEBB50 /* MJRefreshStateTrailer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateTrailer.m; path = MJRefresh/Custom/Trailer/MJRefreshStateTrailer.m; sourceTree = "<group>"; };
@@ -1002,7 +1002,7 @@
 		DBA6F42761B7BC4EA87EEBADEB97E2A0 /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
 		DBD614B74DB0183329DFE05C47E401C3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		DBEAA71333FE3884F71FAF0E6B0977F7 /* LNLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LNLoginViewController.m; path = LNAccountModule/Classes/LNLoginViewController.m; sourceTree = "<group>"; };
-		DBFABB20E0DEA187B2D070C3E81CCD6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DBFABB20E0DEA187B2D070C3E81CCD6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DC2C9659AF9E0573B4802458A67E2F09 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/Core/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
 		DC84CC8B4160FCA863E47365FAB34709 /* WKWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+AFNetworking.m"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		DD01239034A4F137A423BBBA10563A1A /* LNAccountModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNAccountModule.release.xcconfig; sourceTree = "<group>"; };
@@ -1257,7 +1257,6 @@
 				91F45508B04C7C82C9DFC48A9A9D3ED6 /* Resources */,
 				486CA771E3B7466C49C021D6A5008342 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1288,7 +1287,6 @@
 				A8A6FD27A80545B8061D9E73ADF477F6 /* ReplaceMe.m */,
 				2A8B7CB18B9CB96216D42436755C17A7 /* Support Files */,
 			);
-			name = LNModuleCore;
 			path = LNModuleCore;
 			sourceTree = "<group>";
 		};
@@ -1593,7 +1591,6 @@
 				386BFDC949E24D3D47E17AA62F98E26E /* Core */,
 				D85B7CB5564798A91F42FEDF4CB7AA5F /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1730,7 +1727,6 @@
 				FAA3E232FEB84557CC7675D8751842C8 /* JSONValueTransformer.m */,
 				098A2AAF4BF9C6699C775F355857BC36 /* Support Files */,
 			);
-			name = JSONModel;
 			path = JSONModel;
 			sourceTree = "<group>";
 		};
@@ -1754,7 +1750,7 @@
 				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket */,
 				BAACA1BF7AB3DD28402C4F9A7C2FD104 /* JSONModel */,
 				97C5F52613FF87051B598BD03E4EAF41 /* LNAccountModule */,
-				169F6CE403071B0C021D613A52088E16 /* LNAccountModule-LNAccountModule */,
+				169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */,
 				87E00E863B0E34141B1E6AAD1D82EBE0 /* LNCommonKit */,
 				48AED3150945F7052D0E2667B953CD71 /* LNModuleCore */,
 				6C11DDA615D28407390C6BFB99E9E548 /* LNModuleProtocol */,
@@ -1854,7 +1850,6 @@
 				3A203AD949D5AD530C8AB58EDE5B292F /* ViewController+MASAdditions.m */,
 				B44F4DAFADF2A2BB8FD480F8C981FD48 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1872,7 +1867,6 @@
 				BBD099600D0D7347E8B09FEAE0F730D9 /* Router */,
 				335EDD1A5E2AFA1DEED101A62A17C462 /* Support Files */,
 			);
-			name = LNCommonKit;
 			path = LNCommonKit;
 			sourceTree = "<group>";
 		};
@@ -1925,7 +1919,6 @@
 				FEC1D92254D75D236113AC1711AE12FD /* ReplaceMe.m */,
 				7D337BD37EA8FBB823888BA7C3FCE6EA /* Support Files */,
 			);
-			name = LNModuleProtocol;
 			path = LNModuleProtocol;
 			sourceTree = "<group>";
 		};
@@ -1936,7 +1929,6 @@
 				6DA41AE1B56A288451E0F5B965B994D7 /* Aspects.m */,
 				DDAF3329F1E76FA7E326F157BF6A31F7 /* Support Files */,
 			);
-			name = Aspects;
 			path = Aspects;
 			sourceTree = "<group>";
 		};
@@ -2021,7 +2013,6 @@
 				A0FF327F3B398CD95D57A717B490DCF8 /* Support Files */,
 				9DDC178E2A68867F41EBB1CC5E3C32A3 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -2034,7 +2025,6 @@
 				42A36C61186974B4DA560BE691C88033 /* GCDAsyncUdpSocket.m */,
 				F60E4F4FAE0211BEE4EBBC4F9FC80400 /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -2490,7 +2480,7 @@
 			);
 			name = "LNAccountModule-LNAccountModule";
 			productName = LNAccountModule;
-			productReference = 169F6CE403071B0C021D613A52088E16 /* LNAccountModule-LNAccountModule */;
+			productReference = 169F6CE403071B0C021D613A52088E16 /* LNAccountModule.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		79258CAD4B41395996E894B8EDEA4F9A /* Pods-LNAccountModule_Tests */ = {
@@ -2647,6 +2637,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					73C7B85C28ECE109F775F9300FD51E3B = {
+						DevelopmentTeam = M3UYE69NKU;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2762,7 +2757,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				703B141D6715D193ADC48CDC7ACBABF6 /* LNAccountModule-LNAccountModule in Resources */,
+				703B141D6715D193ADC48CDC7ACBABF6 /* LNAccountModule.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3861,6 +3856,7 @@
 			baseConfigurationReference = 837B96B80C81BA9F4D0DB5F135D03F34 /* LNAccountModule.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNAccountModule";
+				DEVELOPMENT_TEAM = M3UYE69NKU;
 				IBSC_MODULE = LNAccountModule;
 				INFOPLIST_FILE = "Target Support Files/LNAccountModule/ResourceBundle-LNAccountModule-LNAccountModule-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3960,8 +3956,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -4097,6 +4092,7 @@
 			baseConfigurationReference = DD01239034A4F137A423BBBA10563A1A /* LNAccountModule.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNAccountModule";
+				DEVELOPMENT_TEAM = M3UYE69NKU;
 				IBSC_MODULE = LNAccountModule;
 				INFOPLIST_FILE = "Target Support Files/LNAccountModule/ResourceBundle-LNAccountModule-LNAccountModule-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

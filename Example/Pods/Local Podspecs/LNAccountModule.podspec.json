@@ -1,6 +1,6 @@
 {
   "name": "LNAccountModule",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "summary": "登录组件.",
   "description": "实现业务登录、注册的组件",
   "homepage": "https://github.com/NoNameOrganazation",
@@ -13,23 +13,23 @@
   },
   "source": {
     "git": "https://github.com/NoNameOrganazation/LNAccountModule.git",
-    "tag": "0.1.7"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "LNAccountModule/Classes/**/*.{h,m}",
+  "resource_bundles": {
+    "LNAccountModule": [
+      "LNAccountModule/Classes/**/*.xib"
+    ]
+  },
   "dependencies": {
     "LNModuleProtocol": [
 
     ],
     "LNCommonKit": [
 
-    ]
-  },
-  "resource_bundles": {
-    "LNAccountModule": [
-      "LNAccountModule/Classes/**/*.xib"
     ]
   }
 }

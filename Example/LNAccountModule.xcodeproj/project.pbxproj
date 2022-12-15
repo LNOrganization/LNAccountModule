@@ -275,6 +275,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dongjianxiong;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M3UYE69NKU;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -547,6 +550,7 @@
 			baseConfigurationReference = A930F3B0C5F5915785DA0D71 /* Pods-LNAccountModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M3UYE69NKU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LNAccountModule/LNAccountModule-Prefix.pch";
 				INFOPLIST_FILE = "LNAccountModule/LNAccountModule-Info.plist";
@@ -563,6 +567,7 @@
 			baseConfigurationReference = 9A8A9878FF89CDF1E96AF05B /* Pods-LNAccountModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M3UYE69NKU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LNAccountModule/LNAccountModule-Prefix.pch";
 				INFOPLIST_FILE = "LNAccountModule/LNAccountModule-Info.plist";

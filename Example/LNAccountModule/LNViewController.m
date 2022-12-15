@@ -27,10 +27,6 @@
         NSLog(@"3");
     } observer:self];
     
-    [LNTestManager registerLoginNotify:^(BOOL isLogin, id  _Nonnull object) {
-        NSLog(@"4");
-    } observer:self];
-    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -65,11 +61,15 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self print:4];
+    if (@available(iOS 15.0, *)) {
+        [self print:@(4)];
+    } else {
+        // Fallback on earlier versions
+    }
     [self performSelector:@selector(print:) withObject:nil afterDelay:5];
 }
 
-- (void)print:(NSInteger)index
+- (void)print:(NSNumber *)index
 {
 //    NSLog(@"-----count:%@------<><%@><>-----", @([LNTestManager shareInstance].hashTable.allObjects.count), @(index));
 //    NSLog(@"=====start:%@<%@><%@><>=====", @(index), @(index), @(index));
