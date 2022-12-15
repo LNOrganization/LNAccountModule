@@ -6,24 +6,23 @@
 //
 
 #import "LNLoginManager.h"
-#import <LNModuleCore/LNModuleCore.h>
 #import <LNCommonKit/LNCommonKit.h>
 #import <LNModuleProtocol/LNAccountModuleProtocol.h>
+#import <LNModuleCore/LNModuleCore.h>
+
 #import "LNLoginViewController.h"
 #import "LNAccountModuleConfig.h"
 
 #define kLNLoginAccount @"LNModuleCacheState"
 
-NSString * const LNAccountLoginSucceedNotification = @"kLNAccountLoginSucceedNotification";
-NSString * const LNAccountLogoutFinishNotification = @"kLNAccountLogoutFinishNotification";
-
 
 __attribute__((constructor)) void addModuleAccountModule(void){
+    [[LNModuleManager sharedInstance] addImpClassName:@"LNLoginManager" protocolName:@"LNAccountModuleProtocol"];
     
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [[LNModuleManager sharedInstance] addImpClassName:@"LNLoginManager" protocolName:@"LNAccountModuleProtocol"];
-    });
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+////        [[LNModuleManager sharedInstance] addImpClassName:@"LNLoginManager" protocolName:@"LNAccountModuleProtocol"];
+//    });
 }
 
 
@@ -125,7 +124,7 @@ __attribute__((constructor)) void addModuleAccountModule(void){
 - (void)logout {
     [[NSUserDefaults standardUserDefaults] setValue:nil forKey:kLNLoginAccount];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLogoutFinishNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLogoutNotification object:nil];
     [[self.logoutNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(LNLogoutBlock  _Nonnull block, NSUInteger idx, BOOL * _Nonnull stop) {
         block();
     }];
@@ -145,6 +144,11 @@ __attribute__((constructor)) void addModuleAccountModule(void){
     [self.logoutNotifications setObject:block forKey:observer];
 }
 
+- (NSDictionary *)getLoginUserInfo {
+    return nil;
+}
+
+
 
 - (void)showLoginViewControllerWithCompletion:(LNLoginBlock)completion
 {
@@ -161,7 +165,7 @@ __attribute__((constructor)) void addModuleAccountModule(void){
         if (!error && accountInfo) {
             [[NSUserDefaults standardUserDefaults] setValue:accountInfo forKey:kLNLoginAccount];
             [[NSUserDefaults standardUserDefaults] synchronize];
-            [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLoginSucceedNotification object:nil userInfo:accountInfo];
+            [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLoginNotification object:nil userInfo:accountInfo];
         }
         [strongLoginVc dismissViewControllerAnimated:YES completion:^{
             if (completion) {
