@@ -121,15 +121,8 @@ __attribute__((constructor)) void addModuleAccountModule(void){
     [[NSUserDefaults standardUserDefaults] synchronize];
     [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLogoutNotification object:nil];
     [[self.logoutNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if(obj != NULL && ![obj isKindOfClass:[NSNull class]]){
-            LNLogoutBlock block = obj;
-            block();
-        }
+        [self performLogoutBlock:obj];
     }];
-//    [[self.logoutNotifications copy] enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, LNLogoutCompletion  _Nonnull obj, BOOL * _Nonnull stop) {
-//        obj();
-//    }];
-    
 }
 
 - (void)addObserver:(id)observer forLoginBlock:(LNLoginBlock)block
@@ -145,8 +138,6 @@ __attribute__((constructor)) void addModuleAccountModule(void){
 - (NSDictionary *)getLoginUserInfo {
     return nil;
 }
-
-
 
 - (void)showLoginViewControllerWithCompletion:(LNLoginBlock)completion
 {
@@ -170,14 +161,31 @@ __attribute__((constructor)) void addModuleAccountModule(void){
                 completion(accountInfo, error);
             }
             [[weakSelf.loginNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                if(obj != NULL && ![obj isKindOfClass:[NSNull class]]){
-                    LNLoginBlock block = obj;
-                    block(accountInfo, error);
-                }
+                [weakSelf performLoginBlock:obj userInfo:accountInfo error:error];
             }];
         }];
     };
     [[LNRouter currentViewController] presentViewController:loginVc animated:YES completion:nil];
+}
+
+#pragma mark - call back
+
+- (void)performLoginBlock:(id)blockObject
+                 userInfo:(NSDictionary *)userInfo
+                    error:(NSError *)error
+{
+    if(blockObject != NULL && ![blockObject isKindOfClass:[NSNull class]]){
+        LNLoginBlock block = blockObject;
+        block(userInfo, error);
+    }
+}
+
+- (void)performLogoutBlock:(id)blockObject
+{
+    if(blockObject != NULL && ![blockObject isKindOfClass:[NSNull class]]){
+        LNLogoutBlock block = blockObject;
+        block();
+    }
 }
 
 @end
