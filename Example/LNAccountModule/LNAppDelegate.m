@@ -16,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     LNViewController *vc = [[LNViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -26,12 +29,16 @@
         NSLog(@"login");
     }];
     
-    [accountModule logout];
-    
     [accountModule addObserver:self forLogoutBlock:^{
         NSLog(@"logout");
     }];
     
+    
+    [accountModule logout];
+    
+    [accountModule loginIfNeed:^(NSDictionary *userInfo, NSError *error) {
+        
+    }];
 
     [LNTestManager registerLoginNotify:^(BOOL isLogin, id  _Nonnull object) {
         NSLog(@"1");

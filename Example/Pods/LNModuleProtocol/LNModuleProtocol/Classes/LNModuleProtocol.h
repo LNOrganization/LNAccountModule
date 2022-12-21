@@ -8,12 +8,11 @@
 #import <Foundation/Foundation.h>
 
 
-#import "LNFeedModuleProtocol.h"
-#import "LNLiveModuleProtocol.h"
-#import "LNUserCenterModuleProtocol.h"
-#import "LNAccountModuleProtocol.h"
-#import "LNVideoModuleProtocol.h"
-
+#import <LNModuleProtocol/LNAccountModuleProtocol.h>
+#import <LNModuleProtocol/LNFeedModuleProtocol.h>
+#import <LNModuleProtocol/LNLiveModuleProtocol.h>
+#import <LNModuleProtocol/LNUserCenterModuleProtocol.h>
+#import <LNModuleProtocol/LNVideoModuleProtocol.h>
 
 @interface LNModuleProtocol : NSObject
 

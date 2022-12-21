@@ -8,14 +8,13 @@
 #ifndef LNFoundationKit_h
 #define LNFoundationKit_h
 
-#import "LNGCDTimer.h"
-#import "LNHashTable.h"
-#import "LNMapTable.h"
-#import "LNMapTable.h"
-#import "LNSafeMutableArray.h"
-#import "LNSafeMutableDictionary.h"
-#import "LNWeakProxy.h"
-#import "NSObject+LNKVC.h"
-#import "NSObject+LNKVO.h"
+#import <LNCommonKit/LNGCDTimer.h>
+#import <LNCommonKit/LNHashTable.h>
+#import <LNCommonKit/LNMapTable.h>
+#import <LNCommonKit/LNSafeMutableArray.h>
+#import <LNCommonKit/LNSafeMutableDictionary.h>
+#import <LNCommonKit/LNWeakProxy.h>
+#import <LNCommonKit/NSObject+LNKVC.h>
+#import <LNCommonKit/NSObject+LNKVO.h>
 
 #endif /* LNFoundationKit_h */

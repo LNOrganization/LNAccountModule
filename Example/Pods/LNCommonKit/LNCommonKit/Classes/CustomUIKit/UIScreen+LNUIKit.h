@@ -9,10 +9,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define LNUIScreenWidth [UIScreen mainScreen].bounds.size.width
-#define LNUIScreenHeight [UIScreen mainScreen].bounds.size.height
-#define LNUIScreenSize [UIScreen mainScreen].bounds.size
-
 @interface UIScreen (LNUIKit)
 
 +(CGFloat)width;

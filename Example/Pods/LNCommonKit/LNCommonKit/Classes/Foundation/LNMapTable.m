@@ -83,8 +83,9 @@ dispatch_semaphore_signal(_lock);
 - (NSDictionary<LNKeyType, LNObjectType> *)dictionaryRepresentation
 {
     LOCK(NSDictionary<LNKeyType, LNObjectType> * ret = [_mapTable dictionaryRepresentation]); return ret;
-
 }
+
+
 
 @end
 

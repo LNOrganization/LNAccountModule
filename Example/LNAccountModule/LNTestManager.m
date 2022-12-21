@@ -51,7 +51,7 @@
                    observer:(id)observer
 {
     if (observer) {
-        [[[self class] shareInstance].weakMapTable setObject:observer forKey:completion];
+        [[[self class] shareInstance].weakMapTable setObject:completion forKey:observer];
     }
 }
 
