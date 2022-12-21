@@ -18,11 +18,6 @@
 
 __attribute__((constructor)) void addModuleAccountModule(void){
     [[LNModuleManager sharedInstance] addImpClassName:@"LNLoginManager" protocolName:@"LNAccountModuleProtocol"];
-    
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-////        [[LNModuleManager sharedInstance] addImpClassName:@"LNLoginManager" protocolName:@"LNAccountModuleProtocol"];
-//    });
 }
 
 
@@ -125,8 +120,11 @@ __attribute__((constructor)) void addModuleAccountModule(void){
     [[NSUserDefaults standardUserDefaults] setValue:nil forKey:kLNLoginAccount];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [[NSNotificationCenter defaultCenter] postNotificationName:LNAccountLogoutNotification object:nil];
-    [[self.logoutNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(LNLogoutBlock  _Nonnull block, NSUInteger idx, BOOL * _Nonnull stop) {
-        block();
+    [[self.logoutNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if(obj != NULL && ![obj isKindOfClass:[NSNull class]]){
+            LNLogoutBlock block = obj;
+            block();
+        }
     }];
 //    [[self.logoutNotifications copy] enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, LNLogoutCompletion  _Nonnull obj, BOOL * _Nonnull stop) {
 //        obj();
@@ -171,8 +169,11 @@ __attribute__((constructor)) void addModuleAccountModule(void){
             if (completion) {
                 completion(accountInfo, error);
             }
-            [[weakSelf.loginNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(LNLoginBlock  _Nonnull block, NSUInteger idx, BOOL * _Nonnull stop) {
-                block(accountInfo, error);
+            [[weakSelf.loginNotifications objectEnumerator].allObjects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                if(obj != NULL && ![obj isKindOfClass:[NSNull class]]){
+                    LNLoginBlock block = obj;
+                    block(accountInfo, error);
+                }
             }];
         }];
     };
